@@ -11,7 +11,15 @@ namespace LogicDeskAdmin.CustomControls
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
+            
+
+            SuspendLayout();
+            foreach (ToolStripItem item in Items)
+            {
+                item.ImageScaling = ToolStripItemImageScaling.None;
+            }
             GripStyle = ToolStripGripStyle.Hidden;
+            ResumeLayout(true);
         }
 
         protected override void OnEnabledChanged(EventArgs e)
