@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicDeskAdmin", "LogicDeskAdmin.csproj", "{37FCFD59-385A-4DDC-9E47-5F2B979CB86A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37FCFD59-385A-4DDC-9E47-5F2B979CB86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FCFD59-385A-4DDC-9E47-5F2B979CB86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FCFD59-385A-4DDC-9E47-5F2B979CB86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FCFD59-385A-4DDC-9E47-5F2B979CB86A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6301E31A-92C9-4614-9995-771BC793889F}
+	EndGlobalSection
+EndGlobal
