@@ -83,6 +83,16 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_report {
+            get {
+                object obj = ResourceManager.GetObject("icon_report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_servidor {
             get {
                 object obj = ResourceManager.GetObject("icon_servidor", resourceCulture);
@@ -96,6 +106,16 @@ namespace LogicDeskAdmin.Properties {
         internal static System.Drawing.Bitmap icon_usuario {
             get {
                 object obj = ResourceManager.GetObject("icon_usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_windows9x {
+            get {
+                object obj = ResourceManager.GetObject("icon_windows9x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
