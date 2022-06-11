@@ -29,5 +29,10 @@ namespace LogicDeskAdmin.Forms
                 }
             }
         }
+
+        private void usuariosDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaUsuarios());
+        }
     }
 }
