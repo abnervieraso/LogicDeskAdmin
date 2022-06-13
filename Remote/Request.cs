@@ -8,5 +8,6 @@ namespace LogicDeskAdmin.Remote
 {
     public class Request
     {
+        
     }
 }

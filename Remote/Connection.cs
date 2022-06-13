@@ -12,7 +12,7 @@ using LogicDeskAdmin.Models;
 
 namespace LogicDeskAdmin.Remote
 {
-    public class Remote : INotifyPropertyChanged
+    public class Connection : INotifyPropertyChanged
     {
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -40,9 +40,9 @@ namespace LogicDeskAdmin.Remote
             }
         }
 
-        public static Remote Instance { get; }
+        public static Connection Instance { get; }
 
-        static Remote()
+        static Connection()
         {
             Instance = new();
             _serverHost = new Uri("http://127.0.0.1:80");
@@ -62,10 +62,10 @@ namespace LogicDeskAdmin.Remote
             if (_isBusy)
                 return default;
             Instance.IsBusy = true;
-            var response = await _client.ExecuteAsync<ResponseWrapper<T?>?>(request);
+            var response = await _client.ExecuteAsync<ResponseWrapper<T?>>(request);
             Instance.IsBusy = false;
 
-            return response.Data;
+            return response.ProcessResponse();
         }
     }
 }

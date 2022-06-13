@@ -33,6 +33,7 @@
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entornoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +41,6 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.usuariosDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainToolStrip.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.MainStatusStrip.SuspendLayout();
@@ -52,10 +52,10 @@
             this.MainToolStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
-            this.MainToolStrip.Location = new System.Drawing.Point(0, 24);
+            this.MainToolStrip.Location = new System.Drawing.Point(0, 33);
             this.MainToolStrip.Name = "MainToolStrip";
-            this.MainToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.MainToolStrip.Size = new System.Drawing.Size(850, 25);
+            this.MainToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.MainToolStrip.Size = new System.Drawing.Size(1214, 34);
             this.MainToolStrip.TabIndex = 1;
             this.MainToolStrip.Text = "Menú de herramientas principal";
             // 
@@ -65,7 +65,7 @@
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(174, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(247, 29);
             this.toolStripButton1.Text = "(esperando identificación...)";
             this.toolStripButton1.ToolTipText = "Sucursal de preferencia";
             // 
@@ -80,15 +80,14 @@
             this.ayudaToolStripMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.MenuStrip.Size = new System.Drawing.Size(850, 24);
+            this.MenuStrip.Size = new System.Drawing.Size(1214, 33);
             this.MenuStrip.TabIndex = 0;
             this.MenuStrip.Text = "Menú estándar principal";
             // 
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // entornoToolStripMenuItem
@@ -96,25 +95,32 @@
             this.entornoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuariosDelSistemaToolStripMenuItem});
             this.entornoToolStripMenuItem.Name = "entornoToolStripMenuItem";
-            this.entornoToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.entornoToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.entornoToolStripMenuItem.Text = "Entorno";
+            // 
+            // usuariosDelSistemaToolStripMenuItem
+            // 
+            this.usuariosDelSistemaToolStripMenuItem.Name = "usuariosDelSistemaToolStripMenuItem";
+            this.usuariosDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
+            this.usuariosDelSistemaToolStripMenuItem.Text = "Usuarios del sistema";
+            this.usuariosDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuariosDelSistemaToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(99, 29);
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // ventanaToolStripMenuItem
             // 
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
-            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.ventanaToolStripMenuItem.Text = "Ventana";
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 22);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // MainStatusStrip
@@ -124,9 +130,10 @@
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel1});
-            this.MainStatusStrip.Location = new System.Drawing.Point(0, 400);
+            this.MainStatusStrip.Location = new System.Drawing.Point(0, 671);
             this.MainStatusStrip.Name = "MainStatusStrip";
-            this.MainStatusStrip.Size = new System.Drawing.Size(850, 22);
+            this.MainStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
+            this.MainStatusStrip.Size = new System.Drawing.Size(1214, 32);
             this.MainStatusStrip.TabIndex = 4;
             this.MainStatusStrip.Text = "Barra de estado principal";
             // 
@@ -136,7 +143,7 @@
             this.toolStripStatusLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripStatusLabel3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(332, 17);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(475, 25);
             this.toolStripStatusLabel3.Spring = true;
             this.toolStripStatusLabel3.Text = "(esperando...)";
             this.toolStripStatusLabel3.ToolTipText = "Último estado de respuesta del servidor";
@@ -146,7 +153,7 @@
             this.toolStripStatusLabel2.Image = global::LogicDeskAdmin.Properties.Resources.icon_usuario;
             this.toolStripStatusLabel2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(170, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(243, 25);
             this.toolStripStatusLabel2.Text = "(esperando identificación...)";
             this.toolStripStatusLabel2.ToolTipText = "Nombre de usuario actual";
             // 
@@ -157,30 +164,22 @@
             this.toolStripStatusLabel1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(332, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(475, 25);
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.Text = "Listo";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripStatusLabel1.ToolTipText = "Estado actual";
             // 
-            // usuariosDelSistemaToolStripMenuItem
-            // 
-            this.usuariosDelSistemaToolStripMenuItem.Name = "usuariosDelSistemaToolStripMenuItem";
-            this.usuariosDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.usuariosDelSistemaToolStripMenuItem.Text = "Usuarios del sistema";
-            this.usuariosDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuariosDelSistemaToolStripMenuItem_Click);
-            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 422);
+            this.ClientSize = new System.Drawing.Size(1214, 703);
             this.Controls.Add(this.MainStatusStrip);
             this.Controls.Add(this.MainToolStrip);
             this.Controls.Add(this.MenuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main";
             this.Text = "LogicDesk versión 2022";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
