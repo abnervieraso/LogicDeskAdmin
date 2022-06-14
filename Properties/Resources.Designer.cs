@@ -63,9 +63,9 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_casa {
+        internal static System.Drawing.Bitmap icon_cloudduplex_28p {
             get {
-                object obj = ResourceManager.GetObject("icon_casa", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_cloudduplex_28p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_nube {
+        internal static System.Drawing.Bitmap icon_computermsg_28p {
             get {
-                object obj = ResourceManager.GetObject("icon_nube", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_computermsg_28p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_nuberoja {
+        internal static System.Drawing.Bitmap icon_del_28p {
             get {
-                object obj = ResourceManager.GetObject("icon_nuberoja", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_del_28p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_report {
+        internal static System.Drawing.Bitmap icon_editdoc_28p {
             get {
-                object obj = ResourceManager.GetObject("icon_report", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_editdoc_28p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_servidor {
+        internal static System.Drawing.Bitmap icon_eye {
             get {
-                object obj = ResourceManager.GetObject("icon_servidor", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_eye", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_usuario {
+        internal static System.Drawing.Bitmap icon_location_28p {
             get {
-                object obj = ResourceManager.GetObject("icon_usuario", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_location_28p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,39 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_windows9x {
+        internal static System.Drawing.Bitmap icon_nuevodoc_28p {
             get {
-                object obj = ResourceManager.GetObject("icon_windows9x", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_nuevodoc_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_refresh_28p {
+            get {
+                object obj = ResourceManager.GetObject("icon_refresh_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_trash_28p {
+            get {
+                object obj = ResourceManager.GetObject("icon_trash_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_user_28p {
+            get {
+                object obj = ResourceManager.GetObject("icon_user_28p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

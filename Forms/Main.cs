@@ -7,14 +7,32 @@ namespace LogicDeskAdmin.Forms
         public bool AskToClose { get; set; }
         public Main()
         {
+            
             InitializeComponent();
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             AskToClose = true;
+
+            using var g = CreateGraphics();
+            var scale = Math.Max(g.DpiX, g.DpiY) / 96.0;
+            Global.ScalingFactor = ((int)Math.Floor(scale * 100) / 50 * 50) / 100.0;
+
+            if (Global.ScalingFactor > 1)
+            {
+                var result = (int)Global.ScalingFactor;
+                
+                MainToolStrip.ImageScalingSize = new Size(result, result);
+                MainStatusStrip.ImageScalingSize = new Size(result, result);
+
+            }
         }
 
         private void OnFormLoad(object sender, EventArgs e)
         {
+            
+
             FormUtils.OpenNew(new Login());
+
+
         }
 
         private void OnFormClosing(object sender, FormClosingEventArgs e)
@@ -34,5 +52,7 @@ namespace LogicDeskAdmin.Forms
         {
             FormUtils.OpenNew(new ListaUsuarios());
         }
+
+        
     }
 }

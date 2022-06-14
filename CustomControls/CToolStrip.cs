@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LogicDeskAdmin.CustomControls
 {
-    public class CToolStrip : ToolStrip
+    public partial class CToolStrip : ToolStrip
     {
-        protected override void OnPaint(PaintEventArgs e)
+      
+        public CToolStrip()
         {
-            base.OnPaint(e);
-            
-
-            SuspendLayout();
-            foreach (ToolStripItem item in Items)
-            {
-                item.ImageScaling = ToolStripItemImageScaling.None;
-            }
+            Stretch = true;
             GripStyle = ToolStripGripStyle.Hidden;
-            ResumeLayout(true);
+            ImageScalingSize = new Size(16, 16);
+
+            if (Global.ScalingFactor > 1)
+            {
+                var result = (int)Global.ScalingFactor;
+                ImageScalingSize = new Size(result, result);
+            }
         }
+
+        
 
         protected override void OnEnabledChanged(EventArgs e)
         {
