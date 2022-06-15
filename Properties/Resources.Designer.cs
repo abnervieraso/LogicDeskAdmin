@@ -63,6 +63,16 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_add {
+            get {
+                object obj = ResourceManager.GetObject("icon_add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_cloudduplex_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_cloudduplex_28p", resourceCulture);
@@ -126,6 +136,26 @@ namespace LogicDeskAdmin.Properties {
         internal static System.Drawing.Bitmap icon_nuevodoc_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_nuevodoc_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_pencil {
+            get {
+                object obj = ResourceManager.GetObject("icon_pencil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_refresh {
+            get {
+                object obj = ResourceManager.GetObject("icon_refresh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

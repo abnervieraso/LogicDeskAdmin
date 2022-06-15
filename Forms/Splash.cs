@@ -24,23 +24,22 @@ namespace LogicDeskAdmin.Forms
             Global.ScalingFactor = ((int)Math.Floor(scale * 100) / 50 * 50) / 100.0;
         }
 
-        private void tlp1_Paint(object sender, PaintEventArgs e)
-        {
-            var snd = sender as Panel;
-            using LinearGradientBrush linearGradientBrush = new(snd!.ClientRectangle, Color.MidnightBlue, Color.Blue, 45);
-            e.Graphics.FillRectangle(linearGradientBrush, snd.ClientRectangle);
-        }
-
-        
 
         private void Splash_Shown(object sender, EventArgs e)
         {
-
             var mainForm = new Main();
             FormUtils.MainForm = mainForm;
             mainForm.FormClosed += (s, e) => Close();
             Hide();
             mainForm.Show();
+
+        }
+
+        private void Splash_Paint(object sender, PaintEventArgs e)
+        {
+            var snd = sender as Form;
+            using LinearGradientBrush linearGradientBrush = new(snd!.ClientRectangle, Color.MidnightBlue, Color.LightBlue, 45);
+            e.Graphics.FillRectangle(linearGradientBrush, snd.ClientRectangle);
         }
     }
 }
