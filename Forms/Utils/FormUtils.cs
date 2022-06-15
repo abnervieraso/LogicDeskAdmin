@@ -8,6 +8,7 @@ namespace LogicDeskAdmin.Forms.Utils
 {
     public static class FormUtils
     {
+        //Cambiar a init o ver como optimizar
         public static Main? MainForm { get; set; }
         const int X = 25;
         const int Y = 25;

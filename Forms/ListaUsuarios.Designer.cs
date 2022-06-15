@@ -34,11 +34,19 @@
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbDisable = new System.Windows.Forms.ToolStripDropDownButton();
             this.habilitardeshabilitarMarcadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsbEliminar = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbRefrescar = new System.Windows.Forms.ToolStripButton();
             this.ts2 = new LogicDeskAdmin.CustomControls.CToolStrip();
+            this.tsbFiltrar = new System.Windows.Forms.ToolStripButton();
+            this.tsbExportar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.flpBusqueda = new System.Windows.Forms.FlowLayoutPanel();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.cTextBox1 = new LogicDeskAdmin.CustomControls.CTextBox();
@@ -57,6 +65,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ts1.SuspendLayout();
+            this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).BeginInit();
@@ -70,7 +79,7 @@
             this.toolStripSeparator1,
             this.tsbEditar,
             this.tsbDisable,
-            this.toolStripDropDownButton1,
+            this.tsbEliminar,
             this.toolStripSeparator2,
             this.tsbRefrescar});
             this.ts1.Location = new System.Drawing.Point(0, 0);
@@ -113,6 +122,7 @@
             this.tsbDisable.Name = "tsbDisable";
             this.tsbDisable.Size = new System.Drawing.Size(147, 22);
             this.tsbDisable.Text = "Habilitar/deshabilitar";
+            this.tsbDisable.ToolTipText = "Habilitar/deshabilitar selección";
             // 
             // habilitardeshabilitarMarcadosToolStripMenuItem
             // 
@@ -121,15 +131,15 @@
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Text = "Habilitar/deshabilitar marcado(s)";
             // 
-            // toolStripDropDownButton1
+            // tsbEliminar
             // 
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbEliminar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
-            this.toolStripDropDownButton1.Image = global::LogicDeskAdmin.Properties.Resources.icon_del_28p;
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(79, 22);
-            this.toolStripDropDownButton1.Text = "Eliminar";
+            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.icon_del_28p;
+            this.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEliminar.Name = "tsbEliminar";
+            this.tsbEliminar.Size = new System.Drawing.Size(79, 22);
+            this.tsbEliminar.Text = "Eliminar";
             // 
             // toolStripMenuItem1
             // 
@@ -155,6 +165,15 @@
             // ts2
             // 
             this.ts2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.ts2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbFiltrar,
+            this.tsbExportar,
+            this.toolStripSeparator3,
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripTextBox1,
+            this.toolStripButton3,
+            this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 25);
             this.ts2.Name = "ts2";
             this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -162,6 +181,76 @@
             this.ts2.Stretch = true;
             this.ts2.TabIndex = 1;
             this.ts2.Text = "cToolStrip2";
+            // 
+            // tsbFiltrar
+            // 
+            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.icon_filterorder;
+            this.tsbFiltrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbFiltrar.Name = "tsbFiltrar";
+            this.tsbFiltrar.Size = new System.Drawing.Size(103, 22);
+            this.tsbFiltrar.Text = "Filtrar/ordenar";
+            this.tsbFiltrar.ToolTipText = "Filtrar u ordenar resultado";
+            // 
+            // tsbExportar
+            // 
+            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icon_statistics;
+            this.tsbExportar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbExportar.Name = "tsbExportar";
+            this.tsbExportar.Size = new System.Drawing.Size(71, 22);
+            this.tsbExportar.Text = "Exportar";
+            this.tsbExportar.ToolTipText = "Exportar resultado";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icon_firstpage;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "Ir a primera página";
+            this.toolStripButton1.ToolTipText = "Ir a primera página";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.icon_atras;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "Ir a página anterior";
+            this.toolStripButton2.ToolTipText = "Ir a página anterior";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(75, 25);
+            this.toolStripTextBox1.ToolTipText = "Número de página";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.icon_adelante;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "Ir a siguiente página";
+            this.toolStripButton3.ToolTipText = "Ir a siguiente página";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.icon_lastpage;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "Ir a última página";
+            this.toolStripButton4.ToolTipText = "Ir a última página";
             // 
             // flpBusqueda
             // 
@@ -378,6 +467,8 @@
             this.Text = "Maestro de usuarios del sistema";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
+            this.ts2.ResumeLayout(false);
+            this.ts2.PerformLayout();
             this.flpBusqueda.ResumeLayout(false);
             this.flpBusqueda.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -410,7 +501,7 @@
         private ToolStripButton tsbEditar;
         private ToolStripDropDownButton tsbDisable;
         private ToolStripMenuItem habilitardeshabilitarMarcadosToolStripMenuItem;
-        private ToolStripDropDownButton toolStripDropDownButton1;
+        private ToolStripDropDownButton tsbEliminar;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripButton tsbRefrescar;
@@ -418,5 +509,13 @@
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
+        private ToolStripButton tsbFiltrar;
+        private ToolStripButton tsbExportar;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton2;
+        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripButton toolStripButton3;
+        private ToolStripButton toolStripButton4;
     }
 }

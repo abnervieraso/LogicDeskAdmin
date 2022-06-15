@@ -16,5 +16,7 @@ namespace LogicDeskAdmin.Forms
         {
             InitializeComponent();
         }
+
+        
     }
 }
