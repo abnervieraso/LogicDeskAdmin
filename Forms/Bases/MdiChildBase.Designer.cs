@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(630, 260);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MdiChildBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Formulario hijo base";

@@ -8,14 +8,9 @@ namespace LogicDeskAdmin.Forms.Utils
 {
     public static class FormUtils
     {
-        public static Main? MainForm { get; }
+        public static Main? MainForm { get; set; }
         const int X = 25;
         const int Y = 25;
-
-        static FormUtils()
-        {
-            MainForm = Application.OpenForms[0] as Main;
-        }
 
         public static void OpenNew(Form form)
         {

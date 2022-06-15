@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,13 @@ namespace LogicDeskAdmin.Forms
                 mainForm.Close();
             }
 
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            var snd = sender as Panel;
+            using LinearGradientBrush linearGradientBrush = new(snd!.ClientRectangle, Color.MidnightBlue, Color.LightBlue, 40);
+            e.Graphics.FillRectangle(linearGradientBrush, snd.ClientRectangle);
         }
     }
 }
