@@ -9,23 +9,55 @@ namespace LogicDeskAdmin.CustomControls
 {
     public class CDataGridView : DataGridView
     {
-        List<int> colX = new List<int>();
-
-        
-
+ 
         public CDataGridView()
         {
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            VirtualMode = true;
             AllowUserToAddRows = false;
             AllowUserToDeleteRows = false;
             AllowUserToOrderColumns = false;
             BackgroundColor = Color.WhiteSmoke;
             RowHeadersVisible = false;
-            
-
+            SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            MultiSelect = false;
+            GridColor = SystemColors.ControlLight;
+            BorderStyle = BorderStyle.Fixed3D;
         }
 
-        
+        // No permitir ordenar columnas ya que el DataSource no es de tipo DataTable
+        protected override void OnColumnAdded(DataGridViewColumnEventArgs e)
+        {
+            base.OnColumnAdded(e);
+            e.Column.SortMode = DataGridViewColumnSortMode.NotSortable;
+        }
+
+        // Se soluciona el problema: cuando se elimina una fila y la selección se "pierde"
+        protected override void OnRowsRemoved(DataGridViewRowsRemovedEventArgs e)
+        {
+            base.OnRowsRemoved(e);
+            if (CurrentCell != null)
+            {
+                CurrentCell.Selected = true;
+
+            }
+        }
+
+        // Cuando DGV se enfoca, este no "scrolea" hasta la fila seleccionada actualmente.
+        // Este void soluciona eso.
+        protected override void OnGotFocus(EventArgs e)
+        {
+            base.OnGotFocus(e);
+            BeginInvoke(() => {
+                if (CurrentCell != null)
+                {
+                    CurrentCell.Selected = true;
+
+                }
+            });
+
+
+        }
 
     }
 }

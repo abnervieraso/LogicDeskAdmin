@@ -22,11 +22,10 @@ namespace LogicDeskAdmin.Forms
 
         private void OnCancelButtonClick(object sender, EventArgs e)
         {
-            if (FormUtils.MainForm is Main mainForm)
-            {
-                mainForm.AskToClose = false;
-                mainForm.Close();
-            }
+            
+                FormUtils.MainForm!.AskToClose = false;
+                FormUtils.MainForm.Close();
+            
 
         }
 
@@ -35,6 +34,11 @@ namespace LogicDeskAdmin.Forms
             var snd = sender as Panel;
             using LinearGradientBrush linearGradientBrush = new(snd!.ClientRectangle, Color.MidnightBlue, Color.LightBlue, 40);
             e.Graphics.FillRectangle(linearGradientBrush, snd.ClientRectangle);
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
