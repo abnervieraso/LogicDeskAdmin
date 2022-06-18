@@ -8,10 +8,14 @@ namespace LogicDeskAdmin.Forms.Utils
 {
     public static class FormUtils
     {
-        //Cambiar a init o ver como optimizar
-        public static Main? MainForm { get; set; }
+        public static Main? MainForm { get; }
         const int X = 25;
         const int Y = 25;
+
+        static FormUtils()
+        {
+            MainForm = (Main)Application.OpenForms[0];
+        }
 
         public static void OpenNew(Form form)
         {

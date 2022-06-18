@@ -57,12 +57,12 @@ namespace LogicDeskAdmin.Remote
         }
 
 
-        public static async Task<ResponseWrapper<T?>?>? Execute<T>(RestRequest request)
+        public static async Task<ResponseWrapper<T>?> Execute<T>(RestRequest request)
         {
             if (_isBusy)
                 return default;
             Instance.IsBusy = true;
-            var response = await _client.ExecuteAsync<ResponseWrapper<T?>>(request);
+            var response = await _client.ExecuteAsync<ResponseWrapper<T>>(request);
             Instance.IsBusy = false;
 
             return response.ProcessResponse();

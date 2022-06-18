@@ -12,7 +12,7 @@ namespace LogicDeskAdmin.Remote
 {
     public static class Utils
     {
-        public static ResponseWrapper<T?>? ProcessResponse<T>(this RestResponse<ResponseWrapper<T?>> response)
+        public static ResponseWrapper<T>? ProcessResponse<T>(this RestResponse<ResponseWrapper<T>> response)
         {
             var statusCode = (uint)response.StatusCode;
             if (statusCode >= 500 && statusCode <= 599)
@@ -62,7 +62,7 @@ namespace LogicDeskAdmin.Remote
                 
                 TaskDialog.ShowDialog(FormUtils.MainForm!, tdp);
             }
-            //TODO: Check de IsValidResponse y mostrar diálogo.
+            //TODO: data is null?
             return response.Data;
         }
     }

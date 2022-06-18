@@ -8,15 +8,15 @@ namespace LogicDeskAdmin.CustomControls
 {
     public partial class CStatusStrip : StatusStrip
     {
+        readonly double _scalingFactor;
+
         public CStatusStrip()
         {
-            
-            ImageScalingSize = new Size(16, 16);
-
-            if (Global.ScalingFactor > 1)
+            _scalingFactor = DeviceDpi / 96.0 * 16;
+            if (_scalingFactor > 1)
             {
-                var result = (int)Global.ScalingFactor;
-                ImageScalingSize = new Size(result, result);
+                var sf = (int)_scalingFactor;
+                ImageScalingSize = new Size(sf, sf);
             }
         }
 

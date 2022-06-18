@@ -6,15 +6,10 @@ namespace LogicDeskAdmin.Forms
     {
         public bool AskToClose { get; set; }
         public Main()
-        {
-            
+        { 
             InitializeComponent();
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             AskToClose = true;
-
-            
-
-            
         }
 
         private void OnFormLoad(object sender, EventArgs e)
