@@ -1,6 +1,6 @@
 ﻿namespace LogicDeskAdmin.Forms
 {
-    partial class ListaUsuarios
+    partial class ListaClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -85,10 +85,10 @@
             this.tsbRefrescar});
             this.ts1.Location = new System.Drawing.Point(0, 0);
             this.ts1.Name = "ts1";
-            this.ts1.Size = new System.Drawing.Size(964, 34);
+            this.ts1.Size = new System.Drawing.Size(1169, 34);
             this.ts1.Stretch = true;
             this.ts1.TabIndex = 0;
-            this.ts1.Text = "Barra de opciones";
+            this.ts1.Text = "cToolStrip1";
             // 
             // tsbNuevo
             // 
@@ -98,7 +98,6 @@
             this.tsbNuevo.Size = new System.Drawing.Size(92, 29);
             this.tsbNuevo.Text = "Nuevo";
             this.tsbNuevo.ToolTipText = "Nuevo elemento";
-            this.tsbNuevo.Click += new System.EventHandler(this.tsbNuevo_Click);
             // 
             // toolStripSeparator1
             // 
@@ -141,6 +140,7 @@
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(116, 29);
             this.tsbEliminar.Text = "Eliminar";
+            this.tsbEliminar.ToolTipText = "Eliminar selección";
             // 
             // toolStripMenuItem1
             // 
@@ -178,10 +178,11 @@
             this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 34);
             this.ts2.Name = "ts2";
-            this.ts2.Size = new System.Drawing.Size(964, 34);
+            this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.ts2.Size = new System.Drawing.Size(1169, 34);
             this.ts2.Stretch = true;
             this.ts2.TabIndex = 1;
-            this.ts2.Text = "Barra de opciones";
+            this.ts2.Text = "cToolStrip2";
             // 
             // tsbFiltrar
             // 
@@ -262,7 +263,7 @@
             this.flpBusqueda.Location = new System.Drawing.Point(0, 68);
             this.flpBusqueda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.flpBusqueda.Name = "flpBusqueda";
-            this.flpBusqueda.Size = new System.Drawing.Size(964, 47);
+            this.flpBusqueda.Size = new System.Drawing.Size(1169, 47);
             this.flpBusqueda.TabIndex = 2;
             // 
             // lblBuscar
@@ -304,20 +305,20 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 493);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 424);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(964, 50);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1169, 50);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(843, 25);
+            this.label6.Location = new System.Drawing.Point(1048, 25);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 25);
@@ -398,7 +399,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(839, 0);
+            this.label5.Location = new System.Drawing.Point(1044, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 25);
@@ -427,7 +428,7 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(964, 378);
+            this.Dgv1.Size = new System.Drawing.Size(1169, 309);
             this.Dgv1.TabIndex = 3;
             this.Dgv1.VirtualMode = true;
             // 
@@ -463,19 +464,19 @@
             this.Column4.Name = "Column4";
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // ListaUsuarios
+            // ListaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 543);
+            this.ClientSize = new System.Drawing.Size(1169, 474);
             this.Controls.Add(this.Dgv1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.flpBusqueda);
             this.Controls.Add(this.ts2);
             this.Controls.Add(this.ts1);
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.Name = "ListaUsuarios";
-            this.Text = "Maestro de usuarios del sistema";
+            this.Name = "ListaClientes";
+            this.Text = "Maestro de clientes";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.ts2.ResumeLayout(false);

@@ -1,5 +1,4 @@
-﻿using LogicDeskAdmin.Forms.Utils;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +10,13 @@ using System.Windows.Forms;
 
 namespace LogicDeskAdmin.Forms
 {
-    public partial class ListaUsuarios : Bases.MdiChildBase
+    public partial class ListaClientes : Bases.MdiChildBase
     {
-        public ListaUsuarios()
+        public ListaClientes()
         {
             InitializeComponent();
         }
 
-        private void tsbNuevo_Click(object sender, EventArgs e)
-        {
-            FormUtils.OpenNew(new CEUsuario());
-        }
+        
     }
 }

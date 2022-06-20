@@ -93,6 +93,16 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_browse {
+            get {
+                object obj = ResourceManager.GetObject("icon_browse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_cloudduplex_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_cloudduplex_28p", resourceCulture);
@@ -223,6 +233,16 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_saveclose {
+            get {
+                object obj = ResourceManager.GetObject("icon_saveclose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_statistics {
             get {
                 object obj = ResourceManager.GetObject("icon_statistics", resourceCulture);
@@ -236,6 +256,16 @@ namespace LogicDeskAdmin.Properties {
         internal static System.Drawing.Bitmap icon_trash_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_trash_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_up {
+            get {
+                object obj = ResourceManager.GetObject("icon_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

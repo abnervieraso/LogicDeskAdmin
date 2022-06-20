@@ -9,22 +9,35 @@ namespace LogicDeskAdmin.CustomControls
 {
     public partial class CToolStrip : ToolStrip
     {
-        readonly double _scalingFactor;
-
-        public CToolStrip()
+       public CToolStrip()
         {
             Stretch = true;
             GripStyle = ToolStripGripStyle.Hidden;
-
-            _scalingFactor = DeviceDpi / 96.0 * 16;
-            if (_scalingFactor > 1)
-            {
-                var sf = (int)_scalingFactor;
-                ImageScalingSize = new Size(sf, sf);
-            }
         }
 
-        
+        // Escalar los íconos de los botones de los controles Strip
+        // Obtiene el DPI actual de la pantalla, luego el factor y se refrescan los items.
+        protected override void OnCreateControl()
+        {
+            base.OnCreateControl();
+            var scalingFactor = DeviceDpi / 96.0;
+            ImageScalingSize = new Size(16, 16);
+
+            if (scalingFactor > 1)
+            {
+                var sf = (int)(scalingFactor * 16);
+                ImageScalingSize = new Size(sf, sf);
+            }
+
+            SuspendLayout();
+            foreach (ToolStripItem item in Items)
+            {
+                item.AutoSize = false;
+                item.AutoSize = true;
+            }
+            ResumeLayout();
+
+        }
 
         protected override void OnEnabledChanged(EventArgs e)
         {
