@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\CECliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\ListaClientes.cs">
       <SubType>Form</SubType>
     </Compile>

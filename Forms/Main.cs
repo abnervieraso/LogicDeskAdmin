@@ -39,6 +39,9 @@ namespace LogicDeskAdmin.Forms
             FormUtils.OpenNew(new ListaUsuarios());
         }
 
-        
+        private void cientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaClientes());
+        }
     }
 }

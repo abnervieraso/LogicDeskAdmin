@@ -41,6 +41,7 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.cientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainToolStrip.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.MainStatusStrip.SuspendLayout();
@@ -49,6 +50,7 @@
             // MainToolStrip
             // 
             this.MainToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.MainToolStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
             this.MainToolStrip.Location = new System.Drawing.Point(0, 33);
@@ -69,6 +71,7 @@
             // 
             // MenuStrip
             // 
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.entornoToolStripMenuItem,
@@ -90,7 +93,8 @@
             // entornoToolStripMenuItem
             // 
             this.entornoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuariosDelSistemaToolStripMenuItem});
+            this.usuariosDelSistemaToolStripMenuItem,
+            this.cientesToolStripMenuItem});
             this.entornoToolStripMenuItem.Name = "entornoToolStripMenuItem";
             this.entornoToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.entornoToolStripMenuItem.Text = "Entorno";
@@ -122,6 +126,7 @@
             // 
             // MainStatusStrip
             // 
+            this.MainStatusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel2,
@@ -162,6 +167,13 @@
             this.toolStripStatusLabel1.Text = "Listo";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripStatusLabel1.ToolTipText = "Estado actual";
+            // 
+            // cientesToolStripMenuItem
+            // 
+            this.cientesToolStripMenuItem.Name = "cientesToolStripMenuItem";
+            this.cientesToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
+            this.cientesToolStripMenuItem.Text = "Clientes";
+            this.cientesToolStripMenuItem.Click += new System.EventHandler(this.cientesToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -204,5 +216,6 @@
         private ToolStripStatusLabel toolStripStatusLabel3;
         private ToolStripStatusLabel toolStripStatusLabel2;
         private ToolStripStatusLabel toolStripStatusLabel1;
+        private ToolStripMenuItem cientesToolStripMenuItem;
     }
 }

@@ -98,6 +98,7 @@
             this.tsbNuevo.Size = new System.Drawing.Size(92, 29);
             this.tsbNuevo.Text = "Nuevo";
             this.tsbNuevo.ToolTipText = "Nuevo elemento";
+            this.tsbNuevo.Click += new System.EventHandler(this.tsbNuevo_Click);
             // 
             // toolStripSeparator1
             // 
