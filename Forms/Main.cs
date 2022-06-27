@@ -26,7 +26,7 @@ namespace LogicDeskAdmin.Forms
             if (AskToClose)
             {
                 e.Cancel = true;
-                if (MessageBox.Show(this, "¿Desea salir de la aplicación?", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, "¿Desea salir de esta aplicación?", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     AskToClose = false;
                     Close();
@@ -39,9 +39,40 @@ namespace LogicDeskAdmin.Forms
             FormUtils.OpenNew(new ListaUsuarios());
         }
 
-        private void cientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sucursalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaSucursales());
+        }
+
+        private void terminalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaTerminales());
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaProveedores());
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void gruposDePrecioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaGruposPrecio());
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormUtils.OpenNew(new ListaClientes());
+
+        }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaProductos());
         }
     }
 }

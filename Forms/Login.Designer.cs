@@ -69,9 +69,9 @@
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 39);
+            this.label1.Size = new System.Drawing.Size(257, 39);
             this.label1.TabIndex = 1;
-            this.label1.Text = "LogicDesk ERP";
+            this.label1.Text = "LD Runner ERP";
             // 
             // tableLayoutPanel1
             // 

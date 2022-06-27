@@ -1,4 +1,5 @@
-﻿using LogicDeskAdmin.Forms.Utils;
+﻿using LogicDeskAdmin.CustomControls;
+using LogicDeskAdmin.Forms.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,17 +12,18 @@ using System.Windows.Forms;
 
 namespace LogicDeskAdmin.Forms
 {
-    public partial class ListaClientes : Bases.MdiChildBase
+    public partial class ListaTerminales: Bases.MdiChildBase
     {
-        public ListaClientes()
+        public ListaTerminales()
         {
             InitializeComponent();
             ActiveControl = txbBusqueda;
+
         }
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            FormUtils.OpenNew(new CECliente());
+            FormUtils.OpenNew(new CETerminal());
         }
     }
 }

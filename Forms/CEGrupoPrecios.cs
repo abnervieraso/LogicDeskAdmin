@@ -12,22 +12,18 @@ using System.Windows.Forms;
 
 namespace LogicDeskAdmin.Forms
 {
-    public partial class CEUsuario : Bases.MdiChildBase
+    public partial class CEGrupoPrecios : Bases.MdiChildBase
     {
-        CToolTip toolTip;
-        public CEUsuario()
+        public CEGrupoPrecios()
         {
             InitializeComponent();
             ActiveControl = txbNombre;
-
-            toolTip = new();
-            toolTip.SetToolTip(pbCodigo, "Obtener un código único aleatorio");
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
             var snd = sender as Panel;
-            using LinearGradientBrush linearGradientBrush = new(snd!.ClientRectangle, Color.White, Color.LightGreen, LinearGradientMode.ForwardDiagonal);
+            using LinearGradientBrush linearGradientBrush = new(snd!.ClientRectangle, Color.White, Color.LightGray, LinearGradientMode.ForwardDiagonal);
             e.Graphics.FillRectangle(linearGradientBrush, snd.ClientRectangle);
         }
 

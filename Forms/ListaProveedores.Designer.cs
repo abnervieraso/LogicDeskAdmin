@@ -1,6 +1,6 @@
 ﻿namespace LogicDeskAdmin.Forms
 {
-    partial class ListaClientes
+    partial class ListaProveedores
     {
         /// <summary>
         /// Required designer variable.
@@ -87,7 +87,7 @@
             this.ts1.Location = new System.Drawing.Point(0, 0);
             this.ts1.Name = "ts1";
             this.ts1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.ts1.Size = new System.Drawing.Size(978, 34);
+            this.ts1.Size = new System.Drawing.Size(1105, 34);
             this.ts1.Stretch = true;
             this.ts1.TabIndex = 0;
             this.ts1.Text = "cToolStrip1";
@@ -182,7 +182,7 @@
             this.ts2.Location = new System.Drawing.Point(0, 34);
             this.ts2.Name = "ts2";
             this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.ts2.Size = new System.Drawing.Size(978, 34);
+            this.ts2.Size = new System.Drawing.Size(1105, 34);
             this.ts2.Stretch = true;
             this.ts2.TabIndex = 1;
             this.ts2.Text = "cToolStrip2";
@@ -266,7 +266,7 @@
             this.flpBusqueda.Location = new System.Drawing.Point(0, 68);
             this.flpBusqueda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.flpBusqueda.Name = "flpBusqueda";
-            this.flpBusqueda.Size = new System.Drawing.Size(978, 47);
+            this.flpBusqueda.Size = new System.Drawing.Size(1105, 47);
             this.flpBusqueda.TabIndex = 2;
             // 
             // lblBuscar
@@ -308,20 +308,20 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 500);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 478);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(978, 50);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1105, 50);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(857, 25);
+            this.label6.Location = new System.Drawing.Point(984, 25);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 25);
@@ -402,7 +402,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(853, 0);
+            this.label5.Location = new System.Drawing.Point(980, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 25);
@@ -432,7 +432,7 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(978, 385);
+            this.Dgv1.Size = new System.Drawing.Size(1105, 363);
             this.Dgv1.TabIndex = 3;
             this.Dgv1.VirtualMode = true;
             // 
@@ -446,27 +446,27 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nombre completo";
+            this.Column2.HeaderText = "Razón social";
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column2.Width = 200;
+            this.Column2.Width = 350;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Descripción";
+            this.Column3.HeaderText = "Nombre comercial";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 250;
+            this.Column3.Width = 350;
             // 
             // Column4
             // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "DUI/documento";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column4.Width = 175;
             // 
             // Column5
             // 
@@ -476,19 +476,19 @@
             this.Column5.Name = "Column5";
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // ListaClientes
+            // ListaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 550);
+            this.ClientSize = new System.Drawing.Size(1105, 528);
             this.Controls.Add(this.Dgv1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.flpBusqueda);
             this.Controls.Add(this.ts2);
             this.Controls.Add(this.ts1);
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.Name = "ListaClientes";
-            this.Text = "Maestro de clientes";
+            this.Name = "ListaProveedores";
+            this.Text = "Maestro de proveedores";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.ts2.ResumeLayout(false);

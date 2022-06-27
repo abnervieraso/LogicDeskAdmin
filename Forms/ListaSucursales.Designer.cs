@@ -1,6 +1,6 @@
 ﻿namespace LogicDeskAdmin.Forms
 {
-    partial class ListaClientes
+    partial class ListaSucursales
     {
         /// <summary>
         /// Required designer variable.
@@ -65,6 +65,8 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cLinkLabel1 = new LogicDeskAdmin.CustomControls.CLinkLabel();
             this.ts1.SuspendLayout();
             this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
@@ -87,10 +89,10 @@
             this.ts1.Location = new System.Drawing.Point(0, 0);
             this.ts1.Name = "ts1";
             this.ts1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.ts1.Size = new System.Drawing.Size(978, 34);
+            this.ts1.Size = new System.Drawing.Size(1028, 34);
             this.ts1.Stretch = true;
             this.ts1.TabIndex = 0;
-            this.ts1.Text = "cToolStrip1";
+            this.ts1.Text = "Barra de opciones";
             // 
             // tsbNuevo
             // 
@@ -143,7 +145,6 @@
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(116, 29);
             this.tsbEliminar.Text = "Eliminar";
-            this.tsbEliminar.ToolTipText = "Eliminar selección";
             // 
             // toolStripMenuItem1
             // 
@@ -181,11 +182,11 @@
             this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 34);
             this.ts2.Name = "ts2";
-            this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.ts2.Size = new System.Drawing.Size(978, 34);
+            this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.ts2.Size = new System.Drawing.Size(1028, 34);
             this.ts2.Stretch = true;
             this.ts2.TabIndex = 1;
-            this.ts2.Text = "cToolStrip2";
+            this.ts2.Text = "Barra de opciones";
             // 
             // tsbFiltrar
             // 
@@ -266,7 +267,7 @@
             this.flpBusqueda.Location = new System.Drawing.Point(0, 68);
             this.flpBusqueda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.flpBusqueda.Name = "flpBusqueda";
-            this.flpBusqueda.Size = new System.Drawing.Size(978, 47);
+            this.flpBusqueda.Size = new System.Drawing.Size(1028, 47);
             this.flpBusqueda.TabIndex = 2;
             // 
             // lblBuscar
@@ -299,29 +300,32 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.label6, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.llblCreador, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.llblActualizador, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cLinkLabel1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.llblCreador, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.llblActualizador, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 500);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 480);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(978, 50);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 75);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(857, 25);
+            this.label6.Location = new System.Drawing.Point(907, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 25);
@@ -332,7 +336,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 0);
+            this.label1.Location = new System.Drawing.Point(41, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 25);
@@ -343,7 +347,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 25);
+            this.label2.Location = new System.Drawing.Point(6, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 25);
@@ -355,11 +359,11 @@
             this.llblCreador.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.llblCreador.AutoSize = true;
             this.llblCreador.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblCreador.Location = new System.Drawing.Point(137, 0);
+            this.llblCreador.Location = new System.Drawing.Point(137, 25);
             this.llblCreador.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.llblCreador.Name = "llblCreador";
             this.llblCreador.Size = new System.Drawing.Size(82, 25);
-            this.llblCreador.TabIndex = 5;
+            this.llblCreador.TabIndex = 6;
             this.llblCreador.TabStop = true;
             this.llblCreador.Text = "(creador)";
             // 
@@ -368,11 +372,11 @@
             this.llblActualizador.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.llblActualizador.AutoSize = true;
             this.llblActualizador.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblActualizador.Location = new System.Drawing.Point(137, 25);
+            this.llblActualizador.Location = new System.Drawing.Point(137, 50);
             this.llblActualizador.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.llblActualizador.Name = "llblActualizador";
             this.llblActualizador.Size = new System.Drawing.Size(117, 25);
-            this.llblActualizador.TabIndex = 6;
+            this.llblActualizador.TabIndex = 7;
             this.llblActualizador.TabStop = true;
             this.llblActualizador.Text = "(actualizador)";
             // 
@@ -380,7 +384,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(266, 0);
+            this.label3.Location = new System.Drawing.Point(266, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 25);
@@ -391,7 +395,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 25);
+            this.label4.Location = new System.Drawing.Point(266, 50);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(211, 25);
@@ -402,7 +406,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(853, 0);
+            this.label5.Location = new System.Drawing.Point(903, 25);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 25);
@@ -432,7 +436,7 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(978, 385);
+            this.Dgv1.Size = new System.Drawing.Size(1028, 365);
             this.Dgv1.TabIndex = 3;
             this.Dgv1.VirtualMode = true;
             // 
@@ -446,11 +450,11 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nombre completo";
+            this.Column2.HeaderText = "Número";
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column2.Width = 200;
+            this.Column2.Width = 150;
             // 
             // Column3
             // 
@@ -458,37 +462,62 @@
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 250;
+            this.Column3.Width = 300;
             // 
             // Column4
             // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "DUI/documento";
-            this.Column4.MinimumWidth = 8;
+            this.Column4.HeaderText = "Tipo de almacen";
+            this.Column4.MinimumWidth = 300;
             this.Column4.Name = "Column4";
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column4.Width = 300;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.HeaderText = "NRC";
+            this.Column5.HeaderText = "Encargado(a)";
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // ListaClientes
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 25);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Encargado(a):";
+            // 
+            // cLinkLabel1
+            // 
+            this.cLinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cLinkLabel1.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.cLinkLabel1, 3);
+            this.cLinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.cLinkLabel1.Location = new System.Drawing.Point(137, 0);
+            this.cLinkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.cLinkLabel1.Name = "cLinkLabel1";
+            this.cLinkLabel1.Size = new System.Drawing.Size(106, 25);
+            this.cLinkLabel1.TabIndex = 5;
+            this.cLinkLabel1.TabStop = true;
+            this.cLinkLabel1.Text = "(encargado)";
+            // 
+            // ListaSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 550);
+            this.ClientSize = new System.Drawing.Size(1028, 555);
             this.Controls.Add(this.Dgv1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.flpBusqueda);
             this.Controls.Add(this.ts2);
             this.Controls.Add(this.ts1);
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.Name = "ListaClientes";
-            this.Text = "Maestro de clientes";
+            this.Name = "ListaSucursales";
+            this.Text = "Maestro de sucursales/almacenes";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.ts2.ResumeLayout(false);
@@ -542,5 +571,7 @@
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
+        private CustomControls.CLinkLabel cLinkLabel1;
+        private Label label7;
     }
 }

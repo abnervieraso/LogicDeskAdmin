@@ -1,6 +1,6 @@
 ﻿namespace LogicDeskAdmin.Forms
 {
-    partial class ListaClientes
+    partial class ListaGruposPrecio
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,6 @@
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
-            this.tsbDisable = new System.Windows.Forms.ToolStripDropDownButton();
-            this.habilitardeshabilitarMarcadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbEliminar = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -63,8 +61,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ts1.SuspendLayout();
             this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
@@ -80,17 +76,16 @@
             this.tsbNuevo,
             this.toolStripSeparator1,
             this.tsbEditar,
-            this.tsbDisable,
             this.tsbEliminar,
             this.toolStripSeparator2,
             this.tsbRefrescar});
             this.ts1.Location = new System.Drawing.Point(0, 0);
             this.ts1.Name = "ts1";
             this.ts1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.ts1.Size = new System.Drawing.Size(978, 34);
+            this.ts1.Size = new System.Drawing.Size(762, 34);
             this.ts1.Stretch = true;
             this.ts1.TabIndex = 0;
-            this.ts1.Text = "cToolStrip1";
+            this.ts1.Text = "Barra de opciones";
             // 
             // tsbNuevo
             // 
@@ -116,24 +111,6 @@
             this.tsbEditar.Text = "Editar/ver";
             this.tsbEditar.ToolTipText = "Editar o ver elemento seleccionado";
             // 
-            // tsbDisable
-            // 
-            this.tsbDisable.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.habilitardeshabilitarMarcadosToolStripMenuItem});
-            this.tsbDisable.Image = global::LogicDeskAdmin.Properties.Resources.icon_trash_28p;
-            this.tsbDisable.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbDisable.Name = "tsbDisable";
-            this.tsbDisable.Size = new System.Drawing.Size(218, 29);
-            this.tsbDisable.Text = "Habilitar/deshabilitar";
-            this.tsbDisable.ToolTipText = "Habilitar/deshabilitar selección";
-            // 
-            // habilitardeshabilitarMarcadosToolStripMenuItem
-            // 
-            this.habilitardeshabilitarMarcadosToolStripMenuItem.Image = global::LogicDeskAdmin.Properties.Resources.icon_trash_28p;
-            this.habilitardeshabilitarMarcadosToolStripMenuItem.Name = "habilitardeshabilitarMarcadosToolStripMenuItem";
-            this.habilitardeshabilitarMarcadosToolStripMenuItem.Size = new System.Drawing.Size(371, 34);
-            this.habilitardeshabilitarMarcadosToolStripMenuItem.Text = "Habilitar/deshabilitar marcado(s)";
-            // 
             // tsbEliminar
             // 
             this.tsbEliminar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -143,7 +120,6 @@
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(116, 29);
             this.tsbEliminar.Text = "Eliminar";
-            this.tsbEliminar.ToolTipText = "Eliminar selección";
             // 
             // toolStripMenuItem1
             // 
@@ -181,11 +157,11 @@
             this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 34);
             this.ts2.Name = "ts2";
-            this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.ts2.Size = new System.Drawing.Size(978, 34);
+            this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.ts2.Size = new System.Drawing.Size(762, 34);
             this.ts2.Stretch = true;
             this.ts2.TabIndex = 1;
-            this.ts2.Text = "cToolStrip2";
+            this.ts2.Text = "Barra de opciones";
             // 
             // tsbFiltrar
             // 
@@ -266,7 +242,7 @@
             this.flpBusqueda.Location = new System.Drawing.Point(0, 68);
             this.flpBusqueda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.flpBusqueda.Name = "flpBusqueda";
-            this.flpBusqueda.Size = new System.Drawing.Size(978, 47);
+            this.flpBusqueda.Size = new System.Drawing.Size(762, 47);
             this.flpBusqueda.TabIndex = 2;
             // 
             // lblBuscar
@@ -308,20 +284,20 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 500);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 505);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(978, 50);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 50);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(857, 25);
+            this.label6.Location = new System.Drawing.Point(641, 25);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 25);
@@ -402,7 +378,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(853, 0);
+            this.label5.Location = new System.Drawing.Point(637, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 25);
@@ -419,9 +395,7 @@
             this.Dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.Column3});
             this.Dgv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Dgv1.GridColor = System.Drawing.SystemColors.ControlLight;
             this.Dgv1.Location = new System.Drawing.Point(0, 115);
@@ -432,7 +406,7 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(978, 385);
+            this.Dgv1.Size = new System.Drawing.Size(762, 390);
             this.Dgv1.TabIndex = 3;
             this.Dgv1.VirtualMode = true;
             // 
@@ -446,49 +420,33 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nombre completo";
+            this.Column2.HeaderText = "Id";
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column2.Width = 200;
+            this.Column2.Width = 90;
             // 
             // Column3
             // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "Descripción";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 250;
             // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "DUI/documento";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.HeaderText = "NRC";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ListaClientes
+            // ListaGruposPrecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 550);
+            this.ClientSize = new System.Drawing.Size(762, 555);
             this.Controls.Add(this.Dgv1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.flpBusqueda);
             this.Controls.Add(this.ts2);
             this.Controls.Add(this.ts1);
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.Name = "ListaClientes";
-            this.Text = "Maestro de clientes";
+            this.Name = "ListaGruposPrecio";
+            this.Text = "Maestro de grupos de precio";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.ts2.ResumeLayout(false);
@@ -523,8 +481,6 @@
         private ToolStripButton tsbNuevo;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton tsbEditar;
-        private ToolStripDropDownButton tsbDisable;
-        private ToolStripMenuItem habilitardeshabilitarMarcadosToolStripMenuItem;
         private ToolStripDropDownButton tsbEliminar;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripSeparator toolStripSeparator2;
@@ -540,7 +496,5 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace LogicDeskAdmin.Forms
 {
-    partial class CECliente
+    partial class CEProveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -42,32 +42,22 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txbNombre = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.txbNombreComercial = new LogicDeskAdmin.CustomControls.CTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.cbPais = new System.Windows.Forms.ComboBox();
             this.cbDepto = new System.Windows.Forms.ComboBox();
             this.cbMunic = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txbIdentidad = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txbNit = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txbNrc = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.txbGiro = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.txbDescripcion = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbSexo = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dtpFechaNac = new System.Windows.Forms.DateTimePicker();
-            this.cbIva = new System.Windows.Forms.CheckBox();
-            this.cbGranContrib = new System.Windows.Forms.CheckBox();
-            this.cbCategoria = new System.Windows.Forms.ComboBox();
-            this.cbMargen = new System.Windows.Forms.CheckBox();
-            this.cTextBox2 = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.txbDireccion = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.txbRazonSocial = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.cbGranContrib = new System.Windows.Forms.CheckBox();
+            this.txnNit = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.txbGiro = new LogicDeskAdmin.CustomControls.CTextBox();
             this.txbContacto = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txbDui = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txbNrc = new LogicDeskAdmin.CustomControls.CTextBox();
             this.ts1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -132,9 +122,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(105, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 25);
+            this.label4.Size = new System.Drawing.Size(168, 25);
             this.label4.TabIndex = 1;
-            this.label4.Text = "(cliente nuevo)";
+            this.label4.Text = "(proveedor nuevo)";
             // 
             // tabControl1
             // 
@@ -143,7 +133,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 59);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(851, 749);
+            this.tabControl1.Size = new System.Drawing.Size(851, 629);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -152,7 +142,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(843, 711);
+            this.tabPage1.Size = new System.Drawing.Size(843, 591);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -167,39 +157,29 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel1.Controls.Add(this.label15, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.label14, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label15, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.label14, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.label12, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txbNombre, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txbIdentidad, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txbNit, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txbNrc, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txbGiro, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txbDescripcion, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.cbSexo, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dtpFechaNac, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.cbIva, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.cbGranContrib, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.cbCategoria, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.cbMargen, 3, 8);
-            this.tableLayoutPanel1.Controls.Add(this.cTextBox2, 5, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label13, 6, 8);
-            this.tableLayoutPanel1.Controls.Add(this.txbDireccion, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.txbContacto, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.txbNombreComercial, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txbDireccion, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txbRazonSocial, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbGranContrib, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txbGiro, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.txbContacto, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txbDui, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txnNit, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txbNrc, 1, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 13;
+            this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -211,16 +191,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(837, 705);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(837, 585);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // label15
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(78, 534);
+            this.label15.Location = new System.Drawing.Point(77, 428);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(88, 25);
             this.label15.TabIndex = 31;
@@ -230,31 +208,31 @@
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(77, 462);
+            this.label14.Location = new System.Drawing.Point(36, 356);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 25);
+            this.label14.Size = new System.Drawing.Size(129, 25);
             this.label14.TabIndex = 29;
-            this.label14.Text = "Dirección:";
+            this.label14.Text = "Giro comercial:";
             // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(74, 407);
+            this.label12.Location = new System.Drawing.Point(20, 265);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 25);
+            this.label12.Size = new System.Drawing.Size(145, 25);
             this.label12.TabIndex = 24;
-            this.label12.Text = "Categoría:";
+            this.label12.Text = "DUI/documento:";
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(37, 316);
+            this.label10.Location = new System.Drawing.Point(76, 175);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 25);
+            this.label10.Size = new System.Drawing.Size(89, 25);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Giro comercial:";
+            this.label10.Text = "Dirección:";
             // 
             // label2
             // 
@@ -262,36 +240,36 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 25);
+            this.label2.Size = new System.Drawing.Size(162, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre completo:";
+            this.label2.Text = "Nombre comercial:";
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 57);
+            this.label3.Location = new System.Drawing.Point(51, 43);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 25);
+            this.label3.Size = new System.Drawing.Size(114, 25);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Descripción:";
+            this.label3.Text = "Razón social:";
             // 
-            // txbNombre
+            // txbNombreComercial
             // 
-            this.txbNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txbNombre, 4);
-            this.txbNombre.Location = new System.Drawing.Point(172, 3);
-            this.txbNombre.MaxLength = 256;
-            this.txbNombre.Name = "txbNombre";
-            this.txbNombre.Size = new System.Drawing.Size(438, 31);
-            this.txbNombre.TabIndex = 4;
+            this.txbNombreComercial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbNombreComercial.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txbNombreComercial, 5);
+            this.txbNombreComercial.Location = new System.Drawing.Point(171, 3);
+            this.txbNombreComercial.MaxLength = 256;
+            this.txbNombreComercial.Name = "txbNombreComercial";
+            this.txbNombreComercial.Size = new System.Drawing.Size(549, 31);
+            this.txbNombreComercial.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(73, 167);
+            this.label6.Location = new System.Drawing.Point(72, 100);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 25);
             this.label6.TabIndex = 6;
@@ -308,14 +286,14 @@
             this.tableLayoutPanel2.Controls.Add(this.cbDepto, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.cbMunic, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(169, 141);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(168, 74);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.Size = new System.Drawing.Size(555, 78);
-            this.tableLayoutPanel2.TabIndex = 8;
+            this.tableLayoutPanel2.TabIndex = 5;
             // 
             // cbPais
             // 
@@ -326,7 +304,7 @@
             this.cbPais.Location = new System.Drawing.Point(3, 3);
             this.cbPais.Name = "cbPais";
             this.cbPais.Size = new System.Drawing.Size(271, 33);
-            this.cbPais.TabIndex = 9;
+            this.cbPais.TabIndex = 6;
             // 
             // cbDepto
             // 
@@ -337,7 +315,7 @@
             this.cbDepto.Location = new System.Drawing.Point(3, 42);
             this.cbDepto.Name = "cbDepto";
             this.cbDepto.Size = new System.Drawing.Size(271, 33);
-            this.cbDepto.TabIndex = 10;
+            this.cbDepto.TabIndex = 7;
             // 
             // cbMunic
             // 
@@ -348,247 +326,138 @@
             this.cbMunic.Location = new System.Drawing.Point(280, 42);
             this.cbMunic.Name = "cbMunic";
             this.cbMunic.Size = new System.Drawing.Size(272, 33);
-            this.cbMunic.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 225);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 25);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "DUI o identidad:";
-            // 
-            // txbIdentidad
-            // 
-            this.txbIdentidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbIdentidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txbIdentidad, 2);
-            this.txbIdentidad.Location = new System.Drawing.Point(172, 222);
-            this.txbIdentidad.MaxLength = 256;
-            this.txbIdentidad.Name = "txbIdentidad";
-            this.txbIdentidad.Size = new System.Drawing.Size(216, 31);
-            this.txbIdentidad.TabIndex = 12;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(456, 225);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 25);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "NIT:";
-            // 
-            // txbNit
-            // 
-            this.txbNit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbNit.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txbNit, 2);
-            this.txbNit.Location = new System.Drawing.Point(505, 222);
-            this.txbNit.MaxLength = 256;
-            this.txbNit.Name = "txbNit";
-            this.txbNit.Size = new System.Drawing.Size(216, 31);
-            this.txbNit.TabIndex = 13;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(115, 262);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 25);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "NRC:";
-            // 
-            // txbNrc
-            // 
-            this.txbNrc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbNrc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txbNrc, 2);
-            this.txbNrc.Location = new System.Drawing.Point(172, 259);
-            this.txbNrc.MaxLength = 256;
-            this.txbNrc.Name = "txbNrc";
-            this.txbNrc.Size = new System.Drawing.Size(216, 31);
-            this.txbNrc.TabIndex = 14;
-            // 
-            // txbGiro
-            // 
-            this.txbGiro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbGiro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txbGiro, 5);
-            this.txbGiro.Location = new System.Drawing.Point(172, 296);
-            this.txbGiro.MaxLength = 256;
-            this.txbGiro.Multiline = true;
-            this.txbGiro.Name = "txbGiro";
-            this.txbGiro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbGiro.Size = new System.Drawing.Size(549, 66);
-            this.txbGiro.TabIndex = 15;
-            this.txbGiro.UseSystemPasswordChar = true;
-            // 
-            // txbDescripcion
-            // 
-            this.txbDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txbDescripcion, 5);
-            this.txbDescripcion.Location = new System.Drawing.Point(172, 40);
-            this.txbDescripcion.MaxLength = 256;
-            this.txbDescripcion.Multiline = true;
-            this.txbDescripcion.Name = "txbDescripcion";
-            this.txbDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbDescripcion.Size = new System.Drawing.Size(549, 59);
-            this.txbDescripcion.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(112, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 25);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Sexo:";
-            // 
-            // cbSexo
-            // 
-            this.cbSexo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.cbSexo, 2);
-            this.cbSexo.FormattingEnabled = true;
-            this.cbSexo.Location = new System.Drawing.Point(172, 105);
-            this.cbSexo.Name = "cbSexo";
-            this.cbSexo.Size = new System.Drawing.Size(216, 33);
-            this.cbSexo.TabIndex = 6;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label11.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label11, 2);
-            this.label11.Location = new System.Drawing.Point(432, 109);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(178, 25);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Fecha de nacimiento:";
-            // 
-            // dtpFechaNac
-            // 
-            this.dtpFechaNac.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.dtpFechaNac, 2);
-            this.dtpFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNac.Location = new System.Drawing.Point(616, 106);
-            this.dtpFechaNac.Name = "dtpFechaNac";
-            this.dtpFechaNac.ShowCheckBox = true;
-            this.dtpFechaNac.Size = new System.Drawing.Size(218, 31);
-            this.dtpFechaNac.TabIndex = 7;
-            // 
-            // cbIva
-            // 
-            this.cbIva.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.cbIva, 2);
-            this.cbIva.Location = new System.Drawing.Point(172, 368);
-            this.cbIva.Name = "cbIva";
-            this.cbIva.Size = new System.Drawing.Size(152, 29);
-            this.cbIva.TabIndex = 16;
-            this.cbIva.Text = "Exentar de IVA";
-            this.cbIva.UseVisualStyleBackColor = true;
-            // 
-            // cbGranContrib
-            // 
-            this.cbGranContrib.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.cbGranContrib, 3);
-            this.cbGranContrib.Location = new System.Drawing.Point(394, 368);
-            this.cbGranContrib.Name = "cbGranContrib";
-            this.cbGranContrib.Size = new System.Drawing.Size(210, 29);
-            this.cbGranContrib.TabIndex = 17;
-            this.cbGranContrib.Text = "Es gran contribuyente";
-            this.cbGranContrib.UseVisualStyleBackColor = true;
-            // 
-            // cbCategoria
-            // 
-            this.cbCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.cbCategoria, 2);
-            this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(172, 403);
-            this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(216, 33);
-            this.cbCategoria.TabIndex = 18;
-            // 
-            // cbMargen
-            // 
-            this.cbMargen.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cbMargen.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.cbMargen, 2);
-            this.cbMargen.Location = new System.Drawing.Point(448, 405);
-            this.cbMargen.Name = "cbMargen";
-            this.cbMargen.Size = new System.Drawing.Size(162, 29);
-            this.cbMargen.TabIndex = 19;
-            this.cbMargen.Text = "Margen propio:";
-            this.cbMargen.UseVisualStyleBackColor = true;
-            // 
-            // cTextBox2
-            // 
-            this.cTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.cTextBox2.Location = new System.Drawing.Point(616, 404);
-            this.cTextBox2.MaxLength = 256;
-            this.cTextBox2.Name = "cTextBox2";
-            this.cTextBox2.Size = new System.Drawing.Size(105, 31);
-            this.cTextBox2.TabIndex = 20;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(727, 407);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 25);
-            this.label13.TabIndex = 28;
-            this.label13.Text = "%";
+            this.cbMunic.TabIndex = 8;
             // 
             // txbDireccion
             // 
             this.txbDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel1.SetColumnSpan(this.txbDireccion, 5);
-            this.txbDireccion.Location = new System.Drawing.Point(172, 442);
+            this.txbDireccion.Location = new System.Drawing.Point(171, 155);
             this.txbDireccion.MaxLength = 256;
             this.txbDireccion.Multiline = true;
             this.txbDireccion.Name = "txbDireccion";
             this.txbDireccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txbDireccion.Size = new System.Drawing.Size(549, 66);
-            this.txbDireccion.TabIndex = 21;
+            this.txbDireccion.TabIndex = 9;
             this.txbDireccion.UseSystemPasswordChar = true;
+            // 
+            // txbRazonSocial
+            // 
+            this.txbRazonSocial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbRazonSocial.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txbRazonSocial, 5);
+            this.txbRazonSocial.Location = new System.Drawing.Point(171, 40);
+            this.txbRazonSocial.MaxLength = 256;
+            this.txbRazonSocial.Name = "txbRazonSocial";
+            this.txbRazonSocial.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txbRazonSocial.Size = new System.Drawing.Size(549, 31);
+            this.txbRazonSocial.TabIndex = 4;
+            // 
+            // cbGranContrib
+            // 
+            this.cbGranContrib.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.cbGranContrib, 2);
+            this.cbGranContrib.Location = new System.Drawing.Point(171, 227);
+            this.cbGranContrib.Name = "cbGranContrib";
+            this.cbGranContrib.Size = new System.Drawing.Size(210, 29);
+            this.cbGranContrib.TabIndex = 10;
+            this.cbGranContrib.Text = "Es gran contribuyente";
+            this.cbGranContrib.UseVisualStyleBackColor = true;
+            // 
+            // txnNit
+            // 
+            this.txnNit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txnNit.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txnNit, 2);
+            this.txnNit.Location = new System.Drawing.Point(504, 262);
+            this.txnNit.MaxLength = 256;
+            this.txnNit.Name = "txnNit";
+            this.txnNit.Size = new System.Drawing.Size(216, 31);
+            this.txnNit.TabIndex = 12;
+            // 
+            // txbGiro
+            // 
+            this.txbGiro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbGiro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txbGiro, 5);
+            this.txbGiro.Location = new System.Drawing.Point(171, 336);
+            this.txbGiro.MaxLength = 256;
+            this.txbGiro.Multiline = true;
+            this.txbGiro.Name = "txbGiro";
+            this.txbGiro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txbGiro.Size = new System.Drawing.Size(549, 66);
+            this.txbGiro.TabIndex = 14;
+            this.txbGiro.UseSystemPasswordChar = true;
             // 
             // txbContacto
             // 
             this.txbContacto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txbContacto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel1.SetColumnSpan(this.txbContacto, 5);
-            this.txbContacto.Location = new System.Drawing.Point(172, 514);
+            this.txbContacto.Location = new System.Drawing.Point(171, 408);
             this.txbContacto.MaxLength = 256;
             this.txbContacto.Multiline = true;
             this.txbContacto.Name = "txbContacto";
             this.txbContacto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txbContacto.Size = new System.Drawing.Size(549, 66);
-            this.txbContacto.TabIndex = 22;
+            this.txbContacto.TabIndex = 15;
             this.txbContacto.UseSystemPasswordChar = true;
             // 
-            // CECliente
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(455, 265);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 25);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "NIT:";
+            // 
+            // txbDui
+            // 
+            this.txbDui.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbDui.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txbDui, 2);
+            this.txbDui.Location = new System.Drawing.Point(171, 262);
+            this.txbDui.MaxLength = 256;
+            this.txbDui.Name = "txbDui";
+            this.txbDui.Size = new System.Drawing.Size(216, 31);
+            this.txbDui.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(114, 302);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 25);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "NRC:";
+            // 
+            // txbNrc
+            // 
+            this.txbNrc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbNrc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txbNrc, 2);
+            this.txbNrc.Location = new System.Drawing.Point(171, 299);
+            this.txbNrc.MaxLength = 256;
+            this.txbNrc.Name = "txbNrc";
+            this.txbNrc.Size = new System.Drawing.Size(216, 31);
+            this.txbNrc.TabIndex = 13;
+            // 
+            // CEProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 808);
+            this.ClientSize = new System.Drawing.Size(851, 688);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.ts1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.Name = "CECliente";
-            this.Text = "Crear cliente";
+            this.Name = "CEProveedor";
+            this.Text = "Crear proveedor";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -614,35 +483,25 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Label label2;
         private Label label3;
-        private CustomControls.CTextBox txbNombre;
+        private CustomControls.CTextBox txbNombreComercial;
         private Label label6;
         private TableLayoutPanel tableLayoutPanel2;
         private ComboBox cbPais;
         private ComboBox cbDepto;
         private ComboBox cbMunic;
         private Label label10;
-        private Label label7;
-        private CustomControls.CTextBox txbIdentidad;
-        private Label label8;
-        private CustomControls.CTextBox txbNit;
-        private Label label9;
-        private CustomControls.CTextBox txbNrc;
-        private CustomControls.CTextBox txbGiro;
+        private CustomControls.CTextBox txbDireccion;
+        private CustomControls.CTextBox txbRazonSocial;
         private CheckBox cbGranContrib;
-        private CustomControls.CTextBox txbDescripcion;
-        private Label label5;
-        private ComboBox cbSexo;
-        private Label label11;
-        private DateTimePicker dtpFechaNac;
-        private CheckBox cbIva;
         private Label label12;
-        private ComboBox cbCategoria;
         private Label label15;
         private Label label14;
-        private CheckBox cbMargen;
-        private CustomControls.CTextBox cTextBox2;
-        private Label label13;
-        private CustomControls.CTextBox txbDireccion;
+        private CustomControls.CTextBox txnNit;
+        private CustomControls.CTextBox txbGiro;
         private CustomControls.CTextBox txbContacto;
+        private Label label5;
+        private CustomControls.CTextBox txbDui;
+        private Label label7;
+        private CustomControls.CTextBox txbNrc;
     }
 }

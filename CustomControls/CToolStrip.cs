@@ -13,6 +13,7 @@ namespace LogicDeskAdmin.CustomControls
         {
             Stretch = true;
             GripStyle = ToolStripGripStyle.Hidden;
+            Text = "Barra de herramientas/acciones";
         }
 
         // Escalar los íconos de los botones de los controles Strip

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace LogicDeskAdmin.Forms
 {
-    public partial class ListaClientes : Bases.MdiChildBase
+    public partial class ListaProveedores : Bases.MdiChildBase
     {
-        public ListaClientes()
+        public ListaProveedores()
         {
             InitializeComponent();
             ActiveControl = txbBusqueda;
@@ -21,7 +21,7 @@ namespace LogicDeskAdmin.Forms
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            FormUtils.OpenNew(new CECliente());
+            FormUtils.OpenNew(new CEProveedor());
         }
     }
 }

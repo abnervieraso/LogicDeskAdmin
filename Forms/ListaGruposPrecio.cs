@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,9 @@ using System.Windows.Forms;
 
 namespace LogicDeskAdmin.Forms
 {
-    public partial class ListaClientes : Bases.MdiChildBase
+    public partial class ListaGruposPrecio : Bases.MdiChildBase
     {
-        public ListaClientes()
+        public ListaGruposPrecio()
         {
             InitializeComponent();
             ActiveControl = txbBusqueda;
@@ -21,7 +22,7 @@ namespace LogicDeskAdmin.Forms
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            FormUtils.OpenNew(new CECliente());
+            FormUtils.OpenNew(new CEGrupoPrecios());
         }
     }
 }

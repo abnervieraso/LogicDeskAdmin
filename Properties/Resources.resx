@@ -124,14 +124,17 @@
   <data name="icon_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_location_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_location_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_refresh_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_refresh_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_trash_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_trash_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_crossdel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_crossdel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_filterorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_filterorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,8 +142,8 @@
   <data name="icon_browse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_browse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_filterorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_filterorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_browsefolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_browsefolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_statistics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +154,14 @@
   <data name="icon_lastpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_lastpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_editdoc_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_editdoc_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icon_user_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_user_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_del_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_del_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,19 +175,22 @@
   <data name="icon_cloudduplex_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_cloudduplex_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_refresh_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_refresh_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_editdoc_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_editdoc_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_computermsg_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_computermsg_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_del_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_del_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icon_firstpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_firstpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_location_28p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_location_28p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

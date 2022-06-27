@@ -103,6 +103,16 @@ namespace LogicDeskAdmin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_browsefolder {
+            get {
+                object obj = ResourceManager.GetObject("icon_browsefolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_cloudduplex_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_cloudduplex_28p", resourceCulture);
@@ -116,6 +126,16 @@ namespace LogicDeskAdmin.Properties {
         internal static System.Drawing.Bitmap icon_computermsg_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_computermsg_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_crossdel {
+            get {
+                object obj = ResourceManager.GetObject("icon_crossdel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +296,16 @@ namespace LogicDeskAdmin.Properties {
         internal static System.Drawing.Bitmap icon_user_28p {
             get {
                 object obj = ResourceManager.GetObject("icon_user_28p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap test {
+            get {
+                object obj = ResourceManager.GetObject("test", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

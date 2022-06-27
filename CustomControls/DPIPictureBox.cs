@@ -11,14 +11,26 @@ namespace LogicDeskAdmin.CustomControls
         public DPIPictureBox()
         {
             SizeMode = PictureBoxSizeMode.Zoom;
-            Size = new Size(16, 16);
+            Margin = new Padding(0, 0, 15, 0);
+            
+        }
 
+        protected override void OnCreateControl()
+        {
+            base.OnCreateControl();
             var scalingFactor = DeviceDpi / 96.0;
+            Size = new Size(18, 18);
+
             if (scalingFactor > 1)
             {
-                var sf = (int)(scalingFactor * 16);
+                var sf = (int)(scalingFactor * 18);
                 Size = new Size(sf, sf);
             }
+
+            
+
         }
+
+        
     }
 }
