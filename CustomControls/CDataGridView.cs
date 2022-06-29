@@ -23,6 +23,7 @@ namespace LogicDeskAdmin.CustomControls
             MultiSelect = false;
             GridColor = SystemColors.ControlLight;
             BorderStyle = BorderStyle.Fixed3D;
+            //EnableHeadersVisualStyles = false;
         }
 
         // No permitir ordenar columnas ya que el DataSource no es de tipo DataTable

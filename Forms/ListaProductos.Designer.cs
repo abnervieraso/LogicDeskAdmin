@@ -28,6 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "categoría", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(categoría)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "familia", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(familia)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "creación", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(fecha c.)"),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(creador)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "actualización", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(fecha act.)"),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(actualizador)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
             this.ts1 = new LogicDeskAdmin.CustomControls.CToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -44,38 +58,28 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.flpBusqueda = new System.Windows.Forms.FlowLayoutPanel();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txbCodart = new LogicDeskAdmin.CustomControls.CTextBox();
             this.cTextBox1 = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.llblActualizador = new LogicDeskAdmin.CustomControls.CLinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.llblCreador = new LogicDeskAdmin.CustomControls.CLinkLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cLinkLabel1 = new LogicDeskAdmin.CustomControls.CLinkLabel();
-            this.cLinkLabel2 = new LogicDeskAdmin.CustomControls.CLinkLabel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cLinkLabel3 = new LogicDeskAdmin.CustomControls.CLinkLabel();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Dgv1 = new LogicDeskAdmin.CustomControls.CDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,7 +92,7 @@
             this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,14 +113,14 @@
             this.ts1.Location = new System.Drawing.Point(0, 0);
             this.ts1.Name = "ts1";
             this.ts1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.ts1.Size = new System.Drawing.Size(1623, 34);
+            this.ts1.Size = new System.Drawing.Size(1615, 34);
             this.ts1.Stretch = true;
             this.ts1.TabIndex = 0;
             this.ts1.Text = "Barra de opciones";
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icon_add;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_plus;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(92, 29);
@@ -131,7 +135,7 @@
             // 
             // tsbEditar
             // 
-            this.tsbEditar.Image = global::LogicDeskAdmin.Properties.Resources.icon_pencil;
+            this.tsbEditar.Image = global::LogicDeskAdmin.Properties.Resources.icn_editar;
             this.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEditar.Name = "tsbEditar";
             this.tsbEditar.Size = new System.Drawing.Size(116, 29);
@@ -142,7 +146,7 @@
             // 
             this.tsbDisable.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.habilitardeshabilitarMarcadosToolStripMenuItem});
-            this.tsbDisable.Image = global::LogicDeskAdmin.Properties.Resources.icon_trash_28p;
+            this.tsbDisable.Image = global::LogicDeskAdmin.Properties.Resources.icn_trash;
             this.tsbDisable.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDisable.Name = "tsbDisable";
             this.tsbDisable.Size = new System.Drawing.Size(218, 29);
@@ -151,7 +155,7 @@
             // 
             // habilitardeshabilitarMarcadosToolStripMenuItem
             // 
-            this.habilitardeshabilitarMarcadosToolStripMenuItem.Image = global::LogicDeskAdmin.Properties.Resources.icon_trash_28p;
+            this.habilitardeshabilitarMarcadosToolStripMenuItem.Image = global::LogicDeskAdmin.Properties.Resources.icn_trash;
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Name = "habilitardeshabilitarMarcadosToolStripMenuItem";
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Size = new System.Drawing.Size(371, 34);
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Text = "Habilitar/deshabilitar marcado(s)";
@@ -160,7 +164,7 @@
             // 
             this.tsbEliminar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
-            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.icon_del_28p;
+            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(116, 29);
@@ -168,7 +172,7 @@
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Image = global::LogicDeskAdmin.Properties.Resources.icon_del_28p;
+            this.toolStripMenuItem1.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(269, 34);
             this.toolStripMenuItem1.Text = "Eliminar marcado(s)";
@@ -180,7 +184,7 @@
             // 
             // tsbRefrescar
             // 
-            this.tsbRefrescar.Image = global::LogicDeskAdmin.Properties.Resources.icon_refresh;
+            this.tsbRefrescar.Image = global::LogicDeskAdmin.Properties.Resources.icn_sync;
             this.tsbRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbRefrescar.Name = "tsbRefrescar";
             this.tsbRefrescar.Size = new System.Drawing.Size(111, 29);
@@ -197,20 +201,20 @@
             this.toolStripSeparator3,
             this.toolStripButton1,
             this.toolStripButton2,
-            this.toolStripTextBox1,
+            this.toolStripButton5,
             this.toolStripButton3,
             this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 34);
             this.ts2.Name = "ts2";
             this.ts2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.ts2.Size = new System.Drawing.Size(1623, 34);
+            this.ts2.Size = new System.Drawing.Size(1615, 34);
             this.ts2.Stretch = true;
             this.ts2.TabIndex = 1;
             this.ts2.Text = "Barra de opciones";
             // 
             // tsbFiltrar
             // 
-            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.icon_filterorder;
+            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.icn_filtrar;
             this.tsbFiltrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFiltrar.Name = "tsbFiltrar";
             this.tsbFiltrar.Size = new System.Drawing.Size(153, 29);
@@ -219,7 +223,7 @@
             // 
             // tsbExportar
             // 
-            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icon_statistics;
+            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icn_export;
             this.tsbExportar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportar.Name = "tsbExportar";
             this.tsbExportar.Size = new System.Drawing.Size(106, 29);
@@ -251,12 +255,15 @@
             this.toolStripButton2.Text = "Ir a página anterior";
             this.toolStripButton2.ToolTipText = "Ir a página anterior";
             // 
-            // toolStripTextBox1
+            // toolStripButton5
             // 
-            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(101, 34);
-            this.toolStripTextBox1.ToolTipText = "Número de página";
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = global::LogicDeskAdmin.Properties.Resources.icon_ver;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(34, 29);
+            this.toolStripButton5.Text = "Ir a página...";
+            this.toolStripButton5.ToolTipText = "Ir a página...";
             // 
             // toolStripButton3
             // 
@@ -288,7 +295,7 @@
             this.flpBusqueda.Location = new System.Drawing.Point(0, 68);
             this.flpBusqueda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.flpBusqueda.Name = "flpBusqueda";
-            this.flpBusqueda.Size = new System.Drawing.Size(1623, 47);
+            this.flpBusqueda.Size = new System.Drawing.Size(1615, 47);
             this.flpBusqueda.TabIndex = 2;
             // 
             // lblBuscar
@@ -324,306 +331,158 @@
             this.cTextBox1.Size = new System.Drawing.Size(544, 31);
             this.cTextBox1.TabIndex = 3;
             // 
-            // label6
+            // tableLayoutPanel2
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(529, 175);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 25);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "0 marcado(s)";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 100);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "(tiempo creación)";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(137, 125);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "(tiempo de actualización)";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(525, 150);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "0 elemento(s)";
-            // 
-            // llblActualizador
-            // 
-            this.llblActualizador.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.llblActualizador.AutoSize = true;
-            this.llblActualizador.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblActualizador.Location = new System.Drawing.Point(358, 125);
-            this.llblActualizador.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.llblActualizador.Name = "llblActualizador";
-            this.llblActualizador.Size = new System.Drawing.Size(117, 25);
-            this.llblActualizador.TabIndex = 8;
-            this.llblActualizador.TabStop = true;
-            this.llblActualizador.Text = "(actualizador)";
+            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 757);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1615, 31);
+            this.tableLayoutPanel2.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 100);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(1378, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 25);
+            this.label1.Size = new System.Drawing.Size(231, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Creación:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "0 elemento(s), 0 marcado(s)";
             // 
-            // label2
+            // tableLayoutPanel1
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 125);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Actualización:";
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.Controls.Add(this.listView3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listView2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listView1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 607);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1615, 150);
+            this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // llblCreador
+            // listView3
             // 
-            this.llblCreador.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.llblCreador.AutoSize = true;
-            this.llblCreador.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblCreador.Location = new System.Drawing.Point(358, 100);
-            this.llblCreador.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.llblCreador.Name = "llblCreador";
-            this.llblCreador.Size = new System.Drawing.Size(82, 25);
-            this.llblCreador.TabIndex = 7;
-            this.llblCreador.TabStop = true;
-            this.llblCreador.Text = "(creador)";
+            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader8,
+            this.columnHeader9});
+            this.listView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView3.GridLines = true;
+            this.listView3.Location = new System.Drawing.Point(649, 3);
+            this.listView3.MultiSelect = false;
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(317, 144);
+            this.listView3.TabIndex = 2;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.View = System.Windows.Forms.View.Details;
             // 
-            // tableLayoutPanel2
+            // columnHeader8
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Controls.Add(this.listView2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.listView1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 2, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 514);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1623, 200);
-            this.tableLayoutPanel2.TabIndex = 5;
+            this.columnHeader8.Text = "Almacen";
+            this.columnHeader8.Width = 125;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Existencia";
+            this.columnHeader9.Width = 100;
             // 
             // listView2
             // 
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3});
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView2.Location = new System.Drawing.Point(652, 3);
+            this.listView2.GridLines = true;
+            this.listView2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            listViewItem1.UseItemStyleForSubItems = false;
+            listViewItem2.UseItemStyleForSubItems = false;
+            listViewItem3.UseItemStyleForSubItems = false;
+            listViewItem4.UseItemStyleForSubItems = false;
+            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
+            this.listView2.Location = new System.Drawing.Point(972, 3);
+            this.listView2.MultiSelect = false;
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(318, 194);
+            this.listView2.Size = new System.Drawing.Size(640, 144);
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Almacen";
-            this.columnHeader1.Width = 175;
+            this.columnHeader1.Text = "Atributo";
+            this.columnHeader1.Width = 120;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Existencia";
-            this.columnHeader2.Width = 125;
+            this.columnHeader2.Text = "Valor1";
+            this.columnHeader2.Width = 175;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Valor2";
+            this.columnHeader3.Width = 175;
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader6,
+            this.columnHeader7});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(3, 3);
+            this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(643, 194);
+            this.listView1.Size = new System.Drawing.Size(640, 144);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Cód. de barras";
-            this.columnHeader3.Width = 175;
-            // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Presentación";
+            this.columnHeader4.Text = "Código de barras";
             this.columnHeader4.Width = 150;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Equivalencia";
-            this.columnHeader5.Width = 150;
+            this.columnHeader5.Text = "Presentación";
+            this.columnHeader5.Width = 115;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Costo";
-            this.columnHeader6.Width = 125;
+            this.columnHeader6.Text = "Equivalencia";
+            this.columnHeader6.Width = 120;
             // 
-            // tableLayoutPanel4
+            // columnHeader7
             // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.Controls.Add(this.label8, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label7, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.cLinkLabel1, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.cLinkLabel2, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label6, 2, 8);
-            this.tableLayoutPanel4.Controls.Add(this.label5, 2, 7);
-            this.tableLayoutPanel4.Controls.Add(this.label10, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.cLinkLabel3, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label4, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.llblActualizador, 2, 6);
-            this.tableLayoutPanel4.Controls.Add(this.llblCreador, 2, 5);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(973, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 9;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(650, 200);
-            this.tableLayoutPanel4.TabIndex = 2;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(33, 50);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 25);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Categoría:";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 25);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 25);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Familia:";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label9.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label9, 3);
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(6, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(381, 25);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "KNORR SOPA 26G GALL CRIO FIDEOS 1/12/12";
-            // 
-            // cLinkLabel1
-            // 
-            this.cLinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cLinkLabel1.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.cLinkLabel1, 2);
-            this.cLinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.cLinkLabel1.Location = new System.Drawing.Point(137, 25);
-            this.cLinkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.cLinkLabel1.Name = "cLinkLabel1";
-            this.cLinkLabel1.Size = new System.Drawing.Size(74, 25);
-            this.cLinkLabel1.TabIndex = 8;
-            this.cLinkLabel1.TabStop = true;
-            this.cLinkLabel1.Text = "(familia)";
-            // 
-            // cLinkLabel2
-            // 
-            this.cLinkLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cLinkLabel2.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.cLinkLabel2, 2);
-            this.cLinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.cLinkLabel2.Location = new System.Drawing.Point(137, 50);
-            this.cLinkLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.cLinkLabel2.Name = "cLinkLabel2";
-            this.cLinkLabel2.Size = new System.Drawing.Size(95, 25);
-            this.cLinkLabel2.TabIndex = 9;
-            this.cLinkLabel2.TabStop = true;
-            this.cLinkLabel2.Text = "(categoría)";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 75);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 25);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Proveedor:";
-            // 
-            // cLinkLabel3
-            // 
-            this.cLinkLabel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cLinkLabel3.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.cLinkLabel3, 2);
-            this.cLinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.cLinkLabel3.Location = new System.Drawing.Point(137, 75);
-            this.cLinkLabel3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.cLinkLabel3.Name = "cLinkLabel3";
-            this.cLinkLabel3.Size = new System.Drawing.Size(161, 25);
-            this.cLinkLabel3.TabIndex = 11;
-            this.cLinkLabel3.TabStop = true;
-            this.cLinkLabel3.Text = "(último proveedor)";
+            this.columnHeader7.Text = "Costo";
+            this.columnHeader7.Width = 100;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 400F));
             this.tableLayoutPanel3.Controls.Add(this.Dgv1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -631,8 +490,8 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1623, 399);
-            this.tableLayoutPanel3.TabIndex = 3;
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1615, 492);
+            this.tableLayoutPanel3.TabIndex = 7;
             // 
             // Dgv1
             // 
@@ -657,7 +516,7 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(1205, 383);
+            this.Dgv1.Size = new System.Drawing.Size(1203, 476);
             this.Dgv1.TabIndex = 6;
             this.Dgv1.VirtualMode = true;
             // 
@@ -691,7 +550,7 @@
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column4.Width = 225;
+            this.Column4.Width = 175;
             // 
             // Column5
             // 
@@ -699,16 +558,17 @@
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column5.Width = 225;
+            this.Column5.Width = 175;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::LogicDeskAdmin.Properties.Resources.test;
-            this.pictureBox1.Location = new System.Drawing.Point(1220, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1218, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(400, 393);
+            this.pictureBox1.Size = new System.Drawing.Size(394, 486);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -717,13 +577,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1623, 714);
+            this.ClientSize = new System.Drawing.Size(1615, 788);
             this.Controls.Add(this.tableLayoutPanel3);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.flpBusqueda);
             this.Controls.Add(this.ts2);
             this.Controls.Add(this.ts1);
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.MaximizeBox = true;
             this.Name = "ListaProductos";
             this.Text = "Maestro de productos";
             this.ts1.ResumeLayout(false);
@@ -733,8 +595,8 @@
             this.flpBusqueda.ResumeLayout(false);
             this.flpBusqueda.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -750,14 +612,6 @@
         private FlowLayoutPanel flpBusqueda;
         private Label lblBuscar;
         private CustomControls.CTextBox txbCodart;
-        private Label label1;
-        private Label label2;
-        private CustomControls.CLinkLabel llblCreador;
-        private CustomControls.CLinkLabel llblActualizador;
-        private Label label3;
-        private Label label4;
-        private Label label6;
-        private Label label5;
         private ToolStripButton tsbNuevo;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton tsbEditar;
@@ -772,11 +626,12 @@
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripButton toolStripButton1;
         private ToolStripButton toolStripButton2;
-        private ToolStripTextBox toolStripTextBox1;
         private ToolStripButton toolStripButton3;
         private ToolStripButton toolStripButton4;
         private CustomControls.CTextBox cTextBox1;
         private TableLayoutPanel tableLayoutPanel2;
+        private Label label1;
+        private TableLayoutPanel tableLayoutPanel1;
         private ListView listView2;
         private ListView listView1;
         private TableLayoutPanel tableLayoutPanel3;
@@ -787,19 +642,16 @@
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
         private PictureBox pictureBox1;
+        private ListView listView3;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader8;
+        private ColumnHeader columnHeader9;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
-        private TableLayoutPanel tableLayoutPanel4;
-        private Label label8;
-        private Label label7;
-        private Label label9;
-        private CustomControls.CLinkLabel cLinkLabel1;
-        private CustomControls.CLinkLabel cLinkLabel2;
-        private Label label10;
-        private CustomControls.CLinkLabel cLinkLabel3;
+        private ColumnHeader columnHeader7;
+        private ToolStripButton toolStripButton5;
     }
 }

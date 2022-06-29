@@ -71,6 +71,7 @@
             this.toolStripButton1});
             this.MainToolStrip.Location = new System.Drawing.Point(0, 33);
             this.MainToolStrip.Name = "MainToolStrip";
+            this.MainToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.MainToolStrip.Size = new System.Drawing.Size(1214, 34);
             this.MainToolStrip.Stretch = true;
             this.MainToolStrip.TabIndex = 1;
@@ -268,6 +269,7 @@
             this.MainStatusStrip.Location = new System.Drawing.Point(0, 671);
             this.MainStatusStrip.Name = "MainStatusStrip";
             this.MainStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
+            this.MainStatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
             this.MainStatusStrip.Size = new System.Drawing.Size(1214, 32);
             this.MainStatusStrip.TabIndex = 6;
             this.MainStatusStrip.Text = "Barra de estado principal";
@@ -277,7 +279,7 @@
             this.toolStripStatusLabel3.Image = global::LogicDeskAdmin.Properties.Resources.icon_computermsg_28p;
             this.toolStripStatusLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(471, 25);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(448, 25);
             this.toolStripStatusLabel3.Spring = true;
             this.toolStripStatusLabel3.Text = "(esperando...)";
             this.toolStripStatusLabel3.ToolTipText = "Último estado de respuesta del servidor";
@@ -296,7 +298,7 @@
             this.toolStripStatusLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(471, 25);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(448, 25);
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.Text = "Listo";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
