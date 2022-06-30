@@ -66,7 +66,6 @@
             this.txbCodart = new LogicDeskAdmin.CustomControls.CTextBox();
             this.cTextBox1 = new LogicDeskAdmin.CustomControls.CTextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.listView3 = new System.Windows.Forms.ListView();
             this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
@@ -88,6 +87,9 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.ts1.SuspendLayout();
             this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
@@ -223,7 +225,7 @@
             // 
             // tsbExportar
             // 
-            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icn_export;
+            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icn_send;
             this.tsbExportar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportar.Name = "tsbExportar";
             this.tsbExportar.Size = new System.Drawing.Size(106, 29);
@@ -238,7 +240,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icon_firstpage;
+            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icn_inicio;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(34, 29);
@@ -248,7 +250,7 @@
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.icon_atras;
+            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.icn_izqu;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(34, 29);
@@ -258,7 +260,7 @@
             // toolStripButton5
             // 
             this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = global::LogicDeskAdmin.Properties.Resources.icon_ver;
+            this.toolStripButton5.Image = global::LogicDeskAdmin.Properties.Resources.icn_paginar;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(34, 29);
@@ -268,7 +270,7 @@
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.icon_adelante;
+            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.icn_derecha;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(34, 29);
@@ -278,7 +280,7 @@
             // toolStripButton4
             // 
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.icon_lastpage;
+            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.icn_fin;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(34, 29);
@@ -336,9 +338,13 @@
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 757);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -346,16 +352,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1615, 31);
             this.tableLayoutPanel2.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1378, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "0 elemento(s), 0 marcado(s)";
             // 
             // tableLayoutPanel1
             // 
@@ -392,7 +388,7 @@
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Almacen";
+            this.columnHeader8.Text = "Almacén";
             this.columnHeader8.Width = 125;
             // 
             // columnHeader9
@@ -573,6 +569,36 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1080, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "elementos: 0";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(543, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "marcados: 0";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 25);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "página actual: 1";
+            // 
             // ListaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -630,7 +656,6 @@
         private ToolStripButton toolStripButton4;
         private CustomControls.CTextBox cTextBox1;
         private TableLayoutPanel tableLayoutPanel2;
-        private Label label1;
         private TableLayoutPanel tableLayoutPanel1;
         private ListView listView2;
         private ListView listView1;
@@ -653,5 +678,8 @@
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
         private ToolStripButton toolStripButton5;
+        private Label label2;
+        private Label label1;
+        private Label label7;
     }
 }

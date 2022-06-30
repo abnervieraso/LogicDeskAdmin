@@ -104,7 +104,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icon_saveclose;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -132,9 +132,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(138, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Referencia:";
+            this.label1.Text = "(terminal nueva)";
             // 
             // label4
             // 
@@ -142,11 +142,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(105, 0);
+            this.label4.Location = new System.Drawing.Point(147, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 25);
+            this.label4.Size = new System.Drawing.Size(0, 25);
             this.label4.TabIndex = 1;
-            this.label4.Text = "(terminal nueva)";
             // 
             // tabControl1
             // 
@@ -245,7 +244,7 @@
             // 
             this.pbSucursal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbSucursal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icon_browsefolder;
+            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icn_browse;
             this.pbSucursal.Location = new System.Drawing.Point(496, 5);
             this.pbSucursal.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbSucursal.Name = "pbSucursal";
@@ -258,7 +257,7 @@
             // 
             this.pbDelSucursal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbDelSucursal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDelSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icon_crossdel;
+            this.pbDelSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.pbDelSucursal.Location = new System.Drawing.Point(528, 5);
             this.pbDelSucursal.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbDelSucursal.Name = "pbDelSucursal";
@@ -302,7 +301,7 @@
             // 
             this.pbGrupoPrecios.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbGrupoPrecios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.icon_browsefolder;
+            this.pbGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.icn_browse;
             this.pbGrupoPrecios.Location = new System.Drawing.Point(384, 5);
             this.pbGrupoPrecios.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbGrupoPrecios.Name = "pbGrupoPrecios";
@@ -315,7 +314,7 @@
             // 
             this.pbDelGrupoPrecios.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbDelGrupoPrecios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDelGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.icon_crossdel;
+            this.pbDelGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.pbDelGrupoPrecios.Location = new System.Drawing.Point(416, 5);
             this.pbDelGrupoPrecios.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbDelGrupoPrecios.Name = "pbDelGrupoPrecios";
@@ -427,7 +426,7 @@
             // 
             this.pbNumeroCaja.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbNumeroCaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbNumeroCaja.Image = global::LogicDeskAdmin.Properties.Resources.icon_browsefolder;
+            this.pbNumeroCaja.Image = global::LogicDeskAdmin.Properties.Resources.icn_gps;
             this.pbNumeroCaja.Location = new System.Drawing.Point(75, 5);
             this.pbNumeroCaja.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.pbNumeroCaja.Name = "pbNumeroCaja";

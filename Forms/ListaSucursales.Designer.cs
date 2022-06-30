@@ -28,6 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "encargado", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(encargado)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "creación", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(fecha c.)"),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(creador)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "actualización", System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64))))), System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(fecha act.)"),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "(actualizador)", System.Drawing.SystemColors.MenuHighlight, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point))}, -1);
             this.ts1 = new LogicDeskAdmin.CustomControls.CToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -44,33 +55,30 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.flpBusqueda = new System.Windows.Forms.FlowLayoutPanel();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txbBusqueda = new LogicDeskAdmin.CustomControls.CTextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.llblCreador = new LogicDeskAdmin.CustomControls.CLinkLabel();
-            this.llblActualizador = new LogicDeskAdmin.CustomControls.CLinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.Dgv1 = new LogicDeskAdmin.CustomControls.CDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cLinkLabel1 = new LogicDeskAdmin.CustomControls.CLinkLabel();
             this.ts1.SuspendLayout();
             this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +104,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icon_add;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_plus;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(92, 29);
@@ -111,7 +119,7 @@
             // 
             // tsbEditar
             // 
-            this.tsbEditar.Image = global::LogicDeskAdmin.Properties.Resources.icon_pencil;
+            this.tsbEditar.Image = global::LogicDeskAdmin.Properties.Resources.icn_editar;
             this.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEditar.Name = "tsbEditar";
             this.tsbEditar.Size = new System.Drawing.Size(116, 29);
@@ -122,7 +130,7 @@
             // 
             this.tsbDisable.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.habilitardeshabilitarMarcadosToolStripMenuItem});
-            this.tsbDisable.Image = global::LogicDeskAdmin.Properties.Resources.icon_trash_28p;
+            this.tsbDisable.Image = global::LogicDeskAdmin.Properties.Resources.icn_trash;
             this.tsbDisable.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDisable.Name = "tsbDisable";
             this.tsbDisable.Size = new System.Drawing.Size(218, 29);
@@ -131,7 +139,7 @@
             // 
             // habilitardeshabilitarMarcadosToolStripMenuItem
             // 
-            this.habilitardeshabilitarMarcadosToolStripMenuItem.Image = global::LogicDeskAdmin.Properties.Resources.icon_trash_28p;
+            this.habilitardeshabilitarMarcadosToolStripMenuItem.Image = global::LogicDeskAdmin.Properties.Resources.icn_trash;
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Name = "habilitardeshabilitarMarcadosToolStripMenuItem";
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Size = new System.Drawing.Size(371, 34);
             this.habilitardeshabilitarMarcadosToolStripMenuItem.Text = "Habilitar/deshabilitar marcado(s)";
@@ -140,7 +148,7 @@
             // 
             this.tsbEliminar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
-            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.icon_del_28p;
+            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(116, 29);
@@ -148,7 +156,7 @@
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Image = global::LogicDeskAdmin.Properties.Resources.icon_del_28p;
+            this.toolStripMenuItem1.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(269, 34);
             this.toolStripMenuItem1.Text = "Eliminar marcado(s)";
@@ -160,7 +168,7 @@
             // 
             // tsbRefrescar
             // 
-            this.tsbRefrescar.Image = global::LogicDeskAdmin.Properties.Resources.icon_refresh;
+            this.tsbRefrescar.Image = global::LogicDeskAdmin.Properties.Resources.icn_sync;
             this.tsbRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbRefrescar.Name = "tsbRefrescar";
             this.tsbRefrescar.Size = new System.Drawing.Size(111, 29);
@@ -177,7 +185,7 @@
             this.toolStripSeparator3,
             this.toolStripButton1,
             this.toolStripButton2,
-            this.toolStripTextBox1,
+            this.toolStripButton5,
             this.toolStripButton3,
             this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 34);
@@ -190,7 +198,7 @@
             // 
             // tsbFiltrar
             // 
-            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.icon_filterorder;
+            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.icn_filtrar;
             this.tsbFiltrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFiltrar.Name = "tsbFiltrar";
             this.tsbFiltrar.Size = new System.Drawing.Size(153, 29);
@@ -199,7 +207,7 @@
             // 
             // tsbExportar
             // 
-            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icon_statistics;
+            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icn_send;
             this.tsbExportar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportar.Name = "tsbExportar";
             this.tsbExportar.Size = new System.Drawing.Size(106, 29);
@@ -214,7 +222,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icon_firstpage;
+            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icn_inicio;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(34, 29);
@@ -224,24 +232,27 @@
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.icon_atras;
+            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.icn_izqu;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(34, 29);
             this.toolStripButton2.Text = "Ir a página anterior";
             this.toolStripButton2.ToolTipText = "Ir a página anterior";
             // 
-            // toolStripTextBox1
+            // toolStripButton5
             // 
-            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(101, 34);
-            this.toolStripTextBox1.ToolTipText = "Número de página";
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = global::LogicDeskAdmin.Properties.Resources.icn_paginar;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(34, 29);
+            this.toolStripButton5.Text = "Ir a última página";
+            this.toolStripButton5.ToolTipText = "Ir a última página";
             // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.icon_adelante;
+            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.icn_derecha;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(34, 29);
@@ -251,7 +262,7 @@
             // toolStripButton4
             // 
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.icon_lastpage;
+            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.icn_fin;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(34, 29);
@@ -292,126 +303,94 @@
             this.txbBusqueda.Size = new System.Drawing.Size(293, 31);
             this.txbBusqueda.TabIndex = 2;
             // 
-            // tableLayoutPanel1
+            // listView2
             // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.cLinkLabel1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.llblCreador, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.llblActualizador, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 480);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 75);
-            this.tableLayoutPanel1.TabIndex = 4;
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.listView2.GridLines = true;
+            this.listView2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            listViewItem1.UseItemStyleForSubItems = false;
+            listViewItem2.UseItemStyleForSubItems = false;
+            listViewItem3.UseItemStyleForSubItems = false;
+            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
+            this.listView2.Location = new System.Drawing.Point(0, 424);
+            this.listView2.MultiSelect = false;
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(1028, 100);
+            this.listView2.TabIndex = 11;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
             // 
-            // label6
+            // columnHeader1
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(907, 50);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 25);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "0 marcado(s)";
+            this.columnHeader1.Text = "Atributo";
+            this.columnHeader1.Width = 120;
             // 
-            // label1
+            // columnHeader2
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Creación:";
+            this.columnHeader2.Text = "Valor1";
+            this.columnHeader2.Width = 175;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Valor2";
+            this.columnHeader3.Width = 175;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 524);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1028, 31);
+            this.tableLayoutPanel2.TabIndex = 10;
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 50);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(688, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Actualización:";
+            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "elementos: 0";
             // 
-            // llblCreador
+            // label1
             // 
-            this.llblCreador.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.llblCreador.AutoSize = true;
-            this.llblCreador.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblCreador.Location = new System.Drawing.Point(137, 25);
-            this.llblCreador.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.llblCreador.Name = "llblCreador";
-            this.llblCreador.Size = new System.Drawing.Size(82, 25);
-            this.llblCreador.TabIndex = 6;
-            this.llblCreador.TabStop = true;
-            this.llblCreador.Text = "(creador)";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(347, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "marcados: 0";
             // 
-            // llblActualizador
+            // label7
             // 
-            this.llblActualizador.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.llblActualizador.AutoSize = true;
-            this.llblActualizador.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llblActualizador.Location = new System.Drawing.Point(137, 50);
-            this.llblActualizador.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.llblActualizador.Name = "llblActualizador";
-            this.llblActualizador.Size = new System.Drawing.Size(117, 25);
-            this.llblActualizador.TabIndex = 7;
-            this.llblActualizador.TabStop = true;
-            this.llblActualizador.Text = "(actualizador)";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(266, 25);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "(tiempo de creación)";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 50);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "(tiempo de modificación)";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(903, 25);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "0 elemento(s)";
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 25);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "página actual: 1";
             // 
             // Dgv1
             // 
@@ -436,8 +415,8 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(1028, 365);
-            this.Dgv1.TabIndex = 3;
+            this.Dgv1.Size = new System.Drawing.Size(1028, 309);
+            this.Dgv1.TabIndex = 12;
             this.Dgv1.VirtualMode = true;
             // 
             // Column1
@@ -458,11 +437,11 @@
             // 
             // Column3
             // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "Descripción";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 300;
             // 
             // Column4
             // 
@@ -474,36 +453,11 @@
             // 
             // Column5
             // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column5.HeaderText = "Encargado(a)";
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 0);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 25);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Encargado(a):";
-            // 
-            // cLinkLabel1
-            // 
-            this.cLinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cLinkLabel1.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.cLinkLabel1, 3);
-            this.cLinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.cLinkLabel1.Location = new System.Drawing.Point(137, 0);
-            this.cLinkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.cLinkLabel1.Name = "cLinkLabel1";
-            this.cLinkLabel1.Size = new System.Drawing.Size(106, 25);
-            this.cLinkLabel1.TabIndex = 5;
-            this.cLinkLabel1.TabStop = true;
-            this.cLinkLabel1.Text = "(encargado)";
+            this.Column5.Width = 240;
             // 
             // ListaSucursales
             // 
@@ -511,7 +465,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 555);
             this.Controls.Add(this.Dgv1);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.listView2);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.flpBusqueda);
             this.Controls.Add(this.ts2);
             this.Controls.Add(this.ts1);
@@ -524,8 +479,8 @@
             this.ts2.PerformLayout();
             this.flpBusqueda.ResumeLayout(false);
             this.flpBusqueda.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -539,16 +494,12 @@
         private FlowLayoutPanel flpBusqueda;
         private Label lblBuscar;
         private CustomControls.CTextBox txbBusqueda;
-        private TableLayoutPanel tableLayoutPanel1;
+        private ListView listView2;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private TableLayoutPanel tableLayoutPanel2;
         private CustomControls.CDataGridView Dgv1;
-        private Label label1;
-        private Label label2;
-        private CustomControls.CLinkLabel llblCreador;
-        private CustomControls.CLinkLabel llblActualizador;
-        private Label label3;
-        private Label label4;
-        private Label label6;
-        private Label label5;
         private ToolStripButton tsbNuevo;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton tsbEditar;
@@ -563,15 +514,16 @@
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripButton toolStripButton1;
         private ToolStripButton toolStripButton2;
-        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripButton toolStripButton5;
         private ToolStripButton toolStripButton3;
         private ToolStripButton toolStripButton4;
+        private Label label2;
+        private Label label1;
+        private Label label7;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
-        private CustomControls.CLinkLabel cLinkLabel1;
-        private Label label7;
     }
 }

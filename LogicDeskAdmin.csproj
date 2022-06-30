@@ -7,11 +7,11 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>LogicDeskAdmin.Program</StartupObject>
-    <ApplicationIcon>icn.ico</ApplicationIcon>
+    <ApplicationIcon>window.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="icn.ico" />
+    <Content Include="window.ico" />
   </ItemGroup>
 
   <ItemGroup>

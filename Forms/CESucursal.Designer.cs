@@ -87,7 +87,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icon_saveclose;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -115,9 +115,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(141, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Referencia:";
+            this.label1.Text = "(almacén nuevo)";
             // 
             // label4
             // 
@@ -125,11 +125,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(105, 0);
+            this.label4.Location = new System.Drawing.Point(150, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 25);
+            this.label4.Size = new System.Drawing.Size(0, 25);
             this.label4.TabIndex = 1;
-            this.label4.Text = "(sucursal nueva)";
             // 
             // tabControl1
             // 
@@ -328,7 +327,7 @@
             // 
             this.pbSucursal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbSucursal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icon_browsefolder;
+            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icn_gps;
             this.pbSucursal.Location = new System.Drawing.Point(86, 5);
             this.pbSucursal.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbSucursal.Name = "pbSucursal";
@@ -381,7 +380,7 @@
             // 
             this.pbEncargado.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbEncargado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbEncargado.Image = global::LogicDeskAdmin.Properties.Resources.icon_browsefolder;
+            this.pbEncargado.Image = global::LogicDeskAdmin.Properties.Resources.icn_browse;
             this.pbEncargado.Location = new System.Drawing.Point(526, 5);
             this.pbEncargado.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbEncargado.Name = "pbEncargado";
@@ -394,7 +393,7 @@
             // 
             this.pbDelEncargado.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbDelEncargado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDelEncargado.Image = global::LogicDeskAdmin.Properties.Resources.icon_crossdel;
+            this.pbDelEncargado.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
             this.pbDelEncargado.Location = new System.Drawing.Point(558, 5);
             this.pbDelEncargado.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbDelEncargado.Name = "pbDelEncargado";
@@ -472,7 +471,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.Name = "CESucursal";
-            this.Text = "Crear sucursal/almacen";
+            this.Text = "Crear sucursal/almacén";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

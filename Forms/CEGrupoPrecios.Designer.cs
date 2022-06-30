@@ -32,7 +32,6 @@
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -61,7 +60,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icon_saveclose;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -72,7 +71,6 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 34);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -89,21 +87,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(212, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Referencia:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(105, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(223, 25);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "(grupo de precios nuevo)";
+            this.label1.Text = "(nuevo grupo de precios)";
             // 
             // tabControl1
             // 
@@ -168,7 +154,7 @@
             this.txbNombre.Size = new System.Drawing.Size(266, 31);
             this.txbNombre.TabIndex = 3;
             // 
-            // CEGruposPrecio
+            // CEGrupoPrecios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,7 +164,7 @@
             this.Controls.Add(this.ts1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.Name = "CEGruposPrecio";
+            this.Name = "CEGrupoPrecios";
             this.Text = "Crear grupo de precios";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
@@ -198,7 +184,6 @@
         private ToolStripButton tsbNuevo;
         private FlowLayoutPanel flowLayoutPanel1;
         private Label label1;
-        private Label label4;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TableLayoutPanel tableLayoutPanel1;

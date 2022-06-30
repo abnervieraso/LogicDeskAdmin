@@ -25,7 +25,7 @@ namespace LogicDeskAdmin.Forms
             toolTip.SetToolTip(pbSucursal, "Seleccionar sucursal");
             toolTip.SetToolTip(pbDelSucursal, "Quitar sucursal actual");
             toolTip.SetToolTip(pbGrupoPrecios, "Seleccionar grupo de precios");
-            toolTip.SetToolTip(pbNumeroCaja, "Quitar grupo de precios actual");
+            toolTip.SetToolTip(pbDelGrupoPrecios, "Quitar grupo de precios actual");
 
         }
 

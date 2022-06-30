@@ -71,7 +71,6 @@
             this.toolStripButton1});
             this.MainToolStrip.Location = new System.Drawing.Point(0, 33);
             this.MainToolStrip.Name = "MainToolStrip";
-            this.MainToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.MainToolStrip.Size = new System.Drawing.Size(1214, 34);
             this.MainToolStrip.Stretch = true;
             this.MainToolStrip.TabIndex = 1;
@@ -79,7 +78,7 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icon_location_28p;
+            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icn_location;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(255, 29);
@@ -276,17 +275,17 @@
             // 
             // toolStripStatusLabel3
             // 
-            this.toolStripStatusLabel3.Image = global::LogicDeskAdmin.Properties.Resources.icon_computermsg_28p;
+            this.toolStripStatusLabel3.Image = global::LogicDeskAdmin.Properties.Resources.icn_status;
             this.toolStripStatusLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(448, 25);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(471, 25);
             this.toolStripStatusLabel3.Spring = true;
             this.toolStripStatusLabel3.Text = "(esperando...)";
             this.toolStripStatusLabel3.ToolTipText = "Último estado de respuesta del servidor";
             // 
             // toolStripStatusLabel2
             // 
-            this.toolStripStatusLabel2.Image = global::LogicDeskAdmin.Properties.Resources.icon_user_28p;
+            this.toolStripStatusLabel2.Image = global::LogicDeskAdmin.Properties.Resources.icn_curuser;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(251, 25);
             this.toolStripStatusLabel2.Text = "(esperando identificación...)";
@@ -294,11 +293,11 @@
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Image = global::LogicDeskAdmin.Properties.Resources.icon_cloudduplex_28p;
+            this.toolStripStatusLabel1.Image = global::LogicDeskAdmin.Properties.Resources.icn_remote;
             this.toolStripStatusLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(448, 25);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(471, 25);
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.Text = "Listo";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -316,7 +315,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "Main";
-            this.Text = "LogicDesk Runner versión 2022";
+            this.Text = "LD Runner";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
             this.Load += new System.EventHandler(this.OnFormLoad);

@@ -32,7 +32,6 @@
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -51,11 +50,11 @@
             this.txbDireccion = new LogicDeskAdmin.CustomControls.CTextBox();
             this.txbRazonSocial = new LogicDeskAdmin.CustomControls.CTextBox();
             this.cbGranContrib = new System.Windows.Forms.CheckBox();
-            this.txnNit = new LogicDeskAdmin.CustomControls.CTextBox();
             this.txbGiro = new LogicDeskAdmin.CustomControls.CTextBox();
             this.txbContacto = new LogicDeskAdmin.CustomControls.CTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbDui = new LogicDeskAdmin.CustomControls.CTextBox();
+            this.txnNit = new LogicDeskAdmin.CustomControls.CTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txbNrc = new LogicDeskAdmin.CustomControls.CTextBox();
             this.ts1.SuspendLayout();
@@ -82,7 +81,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icon_saveclose;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -93,7 +92,6 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 34);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -110,21 +108,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(159, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Referencia:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(105, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 25);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "(proveedor nuevo)";
+            this.label1.Text = "(nuevo proveedor)";
             // 
             // tabControl1
             // 
@@ -365,17 +351,6 @@
             this.cbGranContrib.Text = "Es gran contribuyente";
             this.cbGranContrib.UseVisualStyleBackColor = true;
             // 
-            // txnNit
-            // 
-            this.txnNit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txnNit.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel1.SetColumnSpan(this.txnNit, 2);
-            this.txnNit.Location = new System.Drawing.Point(504, 262);
-            this.txnNit.MaxLength = 256;
-            this.txnNit.Name = "txnNit";
-            this.txnNit.Size = new System.Drawing.Size(216, 31);
-            this.txnNit.TabIndex = 12;
-            // 
             // txbGiro
             // 
             this.txbGiro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -424,6 +399,17 @@
             this.txbDui.Name = "txbDui";
             this.txbDui.Size = new System.Drawing.Size(216, 31);
             this.txbDui.TabIndex = 11;
+            // 
+            // txnNit
+            // 
+            this.txnNit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txnNit.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel1.SetColumnSpan(this.txnNit, 2);
+            this.txnNit.Location = new System.Drawing.Point(504, 262);
+            this.txnNit.MaxLength = 256;
+            this.txnNit.Name = "txnNit";
+            this.txnNit.Size = new System.Drawing.Size(216, 31);
+            this.txnNit.TabIndex = 12;
             // 
             // label7
             // 
@@ -477,7 +463,6 @@
         private ToolStripButton tsbNuevo;
         private FlowLayoutPanel flowLayoutPanel1;
         private Label label1;
-        private Label label4;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TableLayoutPanel tableLayoutPanel1;
