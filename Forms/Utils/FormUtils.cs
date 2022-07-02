@@ -20,7 +20,7 @@ namespace LogicDeskAdmin.Forms.Utils
         public static void OpenNew(Form form)
         {
             form.MdiParent = MainForm;
-            if (form.StartPosition == FormStartPosition.Manual)
+            if (form.StartPosition == FormStartPosition.Manual && form.WindowState != FormWindowState.Maximized)
             {
                 var location = new Point(X, Y);
                 if (MainForm?.ActiveMdiChild is Form activeForm)
@@ -29,6 +29,16 @@ namespace LogicDeskAdmin.Forms.Utils
                     location.Y = activeForm.Location.Y + location.Y;
                 }
                 form.Location = location;
+            }
+
+            if (form.WindowState == FormWindowState.Maximized)
+            {
+                form.WindowState = FormWindowState.Normal;
+                form.Location = new Point(0, 0);
+                var size = MainForm!.MdiArea.Size;
+                size.Width -= 5;
+                size.Height -= 5;
+                form.Size = size;
             }
             
             form.Show();

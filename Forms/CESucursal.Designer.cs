@@ -87,7 +87,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.i_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -327,7 +327,7 @@
             // 
             this.pbSucursal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbSucursal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icn_gps;
+            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.i_rayo;
             this.pbSucursal.Location = new System.Drawing.Point(86, 5);
             this.pbSucursal.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbSucursal.Name = "pbSucursal";
@@ -380,7 +380,7 @@
             // 
             this.pbEncargado.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbEncargado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbEncargado.Image = global::LogicDeskAdmin.Properties.Resources.icn_browse;
+            this.pbEncargado.Image = global::LogicDeskAdmin.Properties.Resources.i_browsefolder;
             this.pbEncargado.Location = new System.Drawing.Point(526, 5);
             this.pbEncargado.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbEncargado.Name = "pbEncargado";
@@ -393,7 +393,7 @@
             // 
             this.pbDelEncargado.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbDelEncargado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDelEncargado.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
+            this.pbDelEncargado.Image = global::LogicDeskAdmin.Properties.Resources.i_equis;
             this.pbDelEncargado.Location = new System.Drawing.Point(558, 5);
             this.pbDelEncargado.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbDelEncargado.Name = "pbDelEncargado";
@@ -405,6 +405,7 @@
             // txbEncargado
             // 
             this.txbEncargado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbEncargado.BackColor = System.Drawing.Color.Azure;
             this.txbEncargado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txbEncargado.Location = new System.Drawing.Point(3, 3);
             this.txbEncargado.MaxLength = 256;

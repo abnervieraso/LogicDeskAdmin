@@ -31,6 +31,9 @@ namespace LogicDeskAdmin.CustomControls
         {
             base.OnColumnAdded(e);
             e.Column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            if (e.Column is DataGridViewTextBoxColumn col)
+                col.MaxInputLength = 256;
+
         }
 
         // Se soluciona el problema: cuando se elimina una fila y la selección se "pierde"

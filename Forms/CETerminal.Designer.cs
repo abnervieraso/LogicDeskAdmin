@@ -104,7 +104,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.i_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -244,7 +244,7 @@
             // 
             this.pbSucursal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbSucursal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icn_browse;
+            this.pbSucursal.Image = global::LogicDeskAdmin.Properties.Resources.i_browsefolder;
             this.pbSucursal.Location = new System.Drawing.Point(496, 5);
             this.pbSucursal.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbSucursal.Name = "pbSucursal";
@@ -257,7 +257,7 @@
             // 
             this.pbDelSucursal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbDelSucursal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDelSucursal.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
+            this.pbDelSucursal.Image = global::LogicDeskAdmin.Properties.Resources.i_equis;
             this.pbDelSucursal.Location = new System.Drawing.Point(528, 5);
             this.pbDelSucursal.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbDelSucursal.Name = "pbDelSucursal";
@@ -269,6 +269,7 @@
             // txbSucursal
             // 
             this.txbSucursal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbSucursal.BackColor = System.Drawing.Color.Azure;
             this.txbSucursal.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txbSucursal.Location = new System.Drawing.Point(3, 3);
             this.txbSucursal.MaxLength = 256;
@@ -301,7 +302,7 @@
             // 
             this.pbGrupoPrecios.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbGrupoPrecios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.icn_browse;
+            this.pbGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.i_browsefolder;
             this.pbGrupoPrecios.Location = new System.Drawing.Point(384, 5);
             this.pbGrupoPrecios.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbGrupoPrecios.Name = "pbGrupoPrecios";
@@ -314,7 +315,7 @@
             // 
             this.pbDelGrupoPrecios.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbDelGrupoPrecios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDelGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
+            this.pbDelGrupoPrecios.Image = global::LogicDeskAdmin.Properties.Resources.i_equis;
             this.pbDelGrupoPrecios.Location = new System.Drawing.Point(416, 5);
             this.pbDelGrupoPrecios.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.pbDelGrupoPrecios.Name = "pbDelGrupoPrecios";
@@ -326,6 +327,7 @@
             // txbGrupoPrecios
             // 
             this.txbGrupoPrecios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbGrupoPrecios.BackColor = System.Drawing.Color.Azure;
             this.txbGrupoPrecios.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txbGrupoPrecios.Location = new System.Drawing.Point(3, 3);
             this.txbGrupoPrecios.MaxLength = 256;
@@ -426,7 +428,7 @@
             // 
             this.pbNumeroCaja.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbNumeroCaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbNumeroCaja.Image = global::LogicDeskAdmin.Properties.Resources.icn_gps;
+            this.pbNumeroCaja.Image = global::LogicDeskAdmin.Properties.Resources.i_rayo;
             this.pbNumeroCaja.Location = new System.Drawing.Point(75, 5);
             this.pbNumeroCaja.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.pbNumeroCaja.Name = "pbNumeroCaja";

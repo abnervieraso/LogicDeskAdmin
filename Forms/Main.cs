@@ -5,11 +5,13 @@ namespace LogicDeskAdmin.Forms
     public partial class Main : Form
     {
         public bool AskToClose { get; set; }
+        public MdiClient MdiArea { get; }
         public Main()
         { 
             InitializeComponent();
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             AskToClose = true;
+            MdiArea = Controls.OfType<MdiClient>().First();
         }
 
         private void OnFormLoad(object sender, EventArgs e)
@@ -73,6 +75,16 @@ namespace LogicDeskAdmin.Forms
         private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FormUtils.OpenNew(new ListaProductos());
+        }
+
+        private void familiasDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaFamiliasProducto());
+        }
+
+        private void categoríasDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUtils.OpenNew(new ListaCategoriasProducto());
         }
     }
 }

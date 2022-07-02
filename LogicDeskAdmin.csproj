@@ -20,6 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\CECategoriaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CEFamiliaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\CEProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -33,6 +39,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\CEGrupoPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ListaCategoriasProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ListaFamiliasProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ListaProveedores.cs">

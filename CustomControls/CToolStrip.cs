@@ -13,8 +13,6 @@ namespace LogicDeskAdmin.CustomControls
         {
             Stretch = true;
             GripStyle = ToolStripGripStyle.Hidden;
-            //RenderMode = ToolStripRenderMode.System;
-            
             Text = "Barra de herramientas/acciones";
         }
 

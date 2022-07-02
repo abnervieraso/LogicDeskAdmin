@@ -1,6 +1,6 @@
 ﻿namespace LogicDeskAdmin.Forms
 {
-    partial class CEGrupoPrecios
+    partial class CECategoriaProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -87,9 +87,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 25);
+            this.label1.Size = new System.Drawing.Size(251, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "(nuevo grupo de precios)";
+            this.label1.Text = "(nueva categoría de producto)";
             // 
             // tabControl1
             // 
@@ -154,7 +154,7 @@
             this.txbNombre.Size = new System.Drawing.Size(266, 31);
             this.txbNombre.TabIndex = 3;
             // 
-            // CEGrupoPrecios
+            // CECategoriaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,8 +164,8 @@
             this.Controls.Add(this.ts1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.Name = "CEGrupoPrecios";
-            this.Text = "Crear grupo de precios";
+            this.Name = "CECategoriaProducto";
+            this.Text = "Crear categoría de producto";
             this.ts1.ResumeLayout(false);
             this.ts1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

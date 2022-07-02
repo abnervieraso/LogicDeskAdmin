@@ -10,5 +10,6 @@ namespace LogicDeskAdmin
     public static class Global
     {
         public static Uri? ServerHost { get; set; }
+        public static string? Token { get; set; }
     }
 }

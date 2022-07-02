@@ -86,7 +86,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_guardar;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.i_guardar;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(103, 29);
@@ -444,7 +444,7 @@
             // 
             this.pbCodigo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbCodigo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbCodigo.Image = global::LogicDeskAdmin.Properties.Resources.icn_gps;
+            this.pbCodigo.Image = global::LogicDeskAdmin.Properties.Resources.i_rayo;
             this.pbCodigo.Location = new System.Drawing.Point(68, 5);
             this.pbCodigo.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.pbCodigo.Name = "pbCodigo";

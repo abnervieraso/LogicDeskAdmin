@@ -50,7 +50,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.tsbSelPagina = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.flpBusqueda = new System.Windows.Forms.FlowLayoutPanel();
@@ -61,13 +61,13 @@
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Dgv1 = new LogicDeskAdmin.CustomControls.CDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.ts1.SuspendLayout();
             this.ts2.SuspendLayout();
             this.flpBusqueda.SuspendLayout();
@@ -96,7 +96,7 @@
             // 
             // tsbNuevo
             // 
-            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.icn_plus;
+            this.tsbNuevo.Image = global::LogicDeskAdmin.Properties.Resources.i_nuevo;
             this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNuevo.Name = "tsbNuevo";
             this.tsbNuevo.Size = new System.Drawing.Size(92, 29);
@@ -111,7 +111,7 @@
             // 
             // tsbEditar
             // 
-            this.tsbEditar.Image = global::LogicDeskAdmin.Properties.Resources.icn_editar;
+            this.tsbEditar.Image = global::LogicDeskAdmin.Properties.Resources.i_editar;
             this.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEditar.Name = "tsbEditar";
             this.tsbEditar.Size = new System.Drawing.Size(116, 29);
@@ -122,7 +122,7 @@
             // 
             this.tsbEliminar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
-            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
+            this.tsbEliminar.Image = global::LogicDeskAdmin.Properties.Resources.i_equis;
             this.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(116, 29);
@@ -130,7 +130,7 @@
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Image = global::LogicDeskAdmin.Properties.Resources.icn_cross;
+            this.toolStripMenuItem1.Image = global::LogicDeskAdmin.Properties.Resources.i_equis;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(269, 34);
             this.toolStripMenuItem1.Text = "Eliminar marcado(s)";
@@ -142,7 +142,7 @@
             // 
             // tsbRefrescar
             // 
-            this.tsbRefrescar.Image = global::LogicDeskAdmin.Properties.Resources.icn_sync;
+            this.tsbRefrescar.Image = global::LogicDeskAdmin.Properties.Resources.i_actualizar;
             this.tsbRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbRefrescar.Name = "tsbRefrescar";
             this.tsbRefrescar.Size = new System.Drawing.Size(111, 29);
@@ -159,7 +159,7 @@
             this.toolStripSeparator3,
             this.toolStripButton1,
             this.toolStripButton2,
-            this.toolStripButton5,
+            this.tsbSelPagina,
             this.toolStripButton3,
             this.toolStripButton4});
             this.ts2.Location = new System.Drawing.Point(0, 34);
@@ -172,21 +172,21 @@
             // 
             // tsbFiltrar
             // 
-            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.icn_filtrar;
+            this.tsbFiltrar.Image = global::LogicDeskAdmin.Properties.Resources.i_filtar;
             this.tsbFiltrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFiltrar.Name = "tsbFiltrar";
             this.tsbFiltrar.Size = new System.Drawing.Size(153, 29);
             this.tsbFiltrar.Text = "Filtrar/ordenar";
-            this.tsbFiltrar.ToolTipText = "Filtrar u ordenar resultado";
+            this.tsbFiltrar.ToolTipText = "Filtrar u ordenar elementos";
             // 
             // tsbExportar
             // 
-            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.icn_send;
+            this.tsbExportar.Image = global::LogicDeskAdmin.Properties.Resources.i_exportar;
             this.tsbExportar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportar.Name = "tsbExportar";
             this.tsbExportar.Size = new System.Drawing.Size(106, 29);
             this.tsbExportar.Text = "Exportar";
-            this.tsbExportar.ToolTipText = "Exportar resultado";
+            this.tsbExportar.ToolTipText = "Exportar elementos";
             // 
             // toolStripSeparator3
             // 
@@ -196,7 +196,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icn_inicio;
+            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.i_inicio;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(34, 29);
@@ -206,25 +206,27 @@
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.icn_izqu;
+            this.toolStripButton2.Image = global::LogicDeskAdmin.Properties.Resources.i_atras;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(34, 29);
             this.toolStripButton2.Text = "Ir a página anterior";
             this.toolStripButton2.ToolTipText = "Ir a página anterior";
             // 
-            // toolStripButton5
+            // tsbSelPagina
             // 
-            this.toolStripButton5.Image = global::LogicDeskAdmin.Properties.Resources.icn_paginar;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(34, 29);
-            this.toolStripButton5.ToolTipText = "Ir a última página";
+            this.tsbSelPagina.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbSelPagina.Image = global::LogicDeskAdmin.Properties.Resources.i_paginar;
+            this.tsbSelPagina.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSelPagina.Name = "tsbSelPagina";
+            this.tsbSelPagina.Size = new System.Drawing.Size(34, 29);
+            this.tsbSelPagina.Text = "Seleccionar página";
+            this.tsbSelPagina.ToolTipText = "Seleccionar página manualmente";
             // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.icn_derecha;
+            this.toolStripButton3.Image = global::LogicDeskAdmin.Properties.Resources.i_adelante;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(34, 29);
@@ -234,7 +236,7 @@
             // toolStripButton4
             // 
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.icn_fin;
+            this.toolStripButton4.Image = global::LogicDeskAdmin.Properties.Resources.i_fin;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(34, 29);
@@ -289,11 +291,12 @@
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2});
-            this.listView2.Location = new System.Drawing.Point(0, 457);
+            this.listView2.Location = new System.Drawing.Point(0, 463);
             this.listView2.MultiSelect = false;
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(762, 67);
-            this.listView2.TabIndex = 11;
+            this.listView2.TabIndex = 4;
+            this.listView2.TabStop = false;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
@@ -316,7 +319,6 @@
             // 
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -325,18 +327,38 @@
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 524);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 530);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(762, 31);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(762, 25);
             this.tableLayoutPanel2.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(511, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "elementos: 0";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(257, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "marcados: 0";
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 3);
+            this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 25);
             this.label7.TabIndex = 0;
@@ -363,13 +385,14 @@
             this.Dgv1.RowHeadersWidth = 62;
             this.Dgv1.RowTemplate.Height = 25;
             this.Dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv1.Size = new System.Drawing.Size(762, 342);
-            this.Dgv1.TabIndex = 12;
+            this.Dgv1.Size = new System.Drawing.Size(762, 348);
+            this.Dgv1.TabIndex = 3;
             this.Dgv1.VirtualMode = true;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "";
+            this.Column1.MaxInputLength = 256;
             this.Column1.MinimumWidth = 35;
             this.Column1.Name = "Column1";
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -378,6 +401,7 @@
             // Column2
             // 
             this.Column2.HeaderText = "Id";
+            this.Column2.MaxInputLength = 256;
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -387,29 +411,10 @@
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "Descripción";
+            this.Column3.MaxInputLength = 256;
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(259, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "marcados: 0";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(512, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "elementos: 0";
             // 
             // ListaGruposPrecio
             // 
@@ -446,21 +451,6 @@
         private FlowLayoutPanel flpBusqueda;
         private Label lblBuscar;
         private CustomControls.CTextBox txbBusqueda;
-        private ToolStripButton tsbNuevo;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripButton tsbEditar;
-        private ToolStripDropDownButton tsbEliminar;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripSeparator toolStripSeparator2;
-        private ToolStripButton tsbRefrescar;
-        private ToolStripButton tsbFiltrar;
-        private ToolStripButton tsbExportar;
-        private ToolStripSeparator toolStripSeparator3;
-        private ToolStripButton toolStripButton1;
-        private ToolStripButton toolStripButton2;
-        private ToolStripButton toolStripButton3;
-        private ToolStripButton toolStripButton4;
-        private ToolStripButton toolStripButton5;
         private ListView listView2;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
@@ -473,5 +463,20 @@
         private DataGridViewTextBoxColumn Column3;
         private Label label2;
         private Label label1;
+        private ToolStripButton tsbNuevo;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripButton tsbEditar;
+        private ToolStripDropDownButton tsbEliminar;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripButton tsbRefrescar;
+        private ToolStripButton tsbFiltrar;
+        private ToolStripButton tsbExportar;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton2;
+        private ToolStripButton tsbSelPagina;
+        private ToolStripButton toolStripButton3;
+        private ToolStripButton toolStripButton4;
     }
 }

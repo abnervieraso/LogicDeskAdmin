@@ -78,7 +78,7 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.icn_location;
+            this.toolStripButton1.Image = global::LogicDeskAdmin.Properties.Resources.i_locacion;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(255, 29);
@@ -227,12 +227,14 @@
             this.familiasDeProductoToolStripMenuItem.Name = "familiasDeProductoToolStripMenuItem";
             this.familiasDeProductoToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.familiasDeProductoToolStripMenuItem.Text = "Familias de producto";
+            this.familiasDeProductoToolStripMenuItem.Click += new System.EventHandler(this.familiasDeProductoToolStripMenuItem_Click);
             // 
             // categoríasDeProductoToolStripMenuItem
             // 
             this.categoríasDeProductoToolStripMenuItem.Name = "categoríasDeProductoToolStripMenuItem";
             this.categoríasDeProductoToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.categoríasDeProductoToolStripMenuItem.Text = "Categorías de producto";
+            this.categoríasDeProductoToolStripMenuItem.Click += new System.EventHandler(this.categoríasDeProductoToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -268,14 +270,13 @@
             this.MainStatusStrip.Location = new System.Drawing.Point(0, 671);
             this.MainStatusStrip.Name = "MainStatusStrip";
             this.MainStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
-            this.MainStatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
             this.MainStatusStrip.Size = new System.Drawing.Size(1214, 32);
             this.MainStatusStrip.TabIndex = 6;
             this.MainStatusStrip.Text = "Barra de estado principal";
             // 
             // toolStripStatusLabel3
             // 
-            this.toolStripStatusLabel3.Image = global::LogicDeskAdmin.Properties.Resources.icn_status;
+            this.toolStripStatusLabel3.Image = global::LogicDeskAdmin.Properties.Resources.i_statusmonitor;
             this.toolStripStatusLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(471, 25);
@@ -285,7 +286,7 @@
             // 
             // toolStripStatusLabel2
             // 
-            this.toolStripStatusLabel2.Image = global::LogicDeskAdmin.Properties.Resources.icn_curuser;
+            this.toolStripStatusLabel2.Image = global::LogicDeskAdmin.Properties.Resources.i_usuarioko;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(251, 25);
             this.toolStripStatusLabel2.Text = "(esperando identificación...)";
@@ -293,7 +294,7 @@
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Image = global::LogicDeskAdmin.Properties.Resources.icn_remote;
+            this.toolStripStatusLabel1.Image = global::LogicDeskAdmin.Properties.Resources.i_cloudcom;
             this.toolStripStatusLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -315,7 +316,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "Main";
-            this.Text = "LD Runner";
+            this.Text = "LogicDesk ERP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
             this.Load += new System.EventHandler(this.OnFormLoad);
