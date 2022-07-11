@@ -8,7 +8,7 @@ namespace LogicDeskAdmin.Models
 {
     public class DataWrapper<T>
     {
-        public T? Data { get; set; }
-        public uint ActionCode { get; set; }
+        public T? Response { get; set; }
+        public uint RActionCode { get; set; }
     }
 }

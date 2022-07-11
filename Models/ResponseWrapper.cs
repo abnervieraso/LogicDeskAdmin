@@ -8,7 +8,7 @@ namespace LogicDeskAdmin.Models
 {
     public class ResponseWrapper<T>
     {
-        public bool IsValidResponse { get; set; }
+        //public bool IsValidResponse { get; set; }
         public string? RMessage { get; set; }
         public byte RMessageIcon { get; set; }
         public DataWrapper<T>? RData { get; set; }

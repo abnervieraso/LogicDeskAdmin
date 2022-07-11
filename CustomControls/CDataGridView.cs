@@ -14,12 +14,17 @@ namespace LogicDeskAdmin.CustomControls
         {
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             VirtualMode = true;
+            AutoGenerateColumns = false;
+            AllowUserToResizeRows = false;
             AllowUserToAddRows = false;
             AllowUserToDeleteRows = false;
             AllowUserToOrderColumns = false;
+            ShowCellToolTips = false;
             BackgroundColor = Color.WhiteSmoke;
             RowHeadersVisible = false;
             SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            //ReadOnly = true;
+            //EditMode = DataGridViewEditMode.EditProgrammatically;
             MultiSelect = false;
             GridColor = SystemColors.ControlLight;
             BorderStyle = BorderStyle.Fixed3D;

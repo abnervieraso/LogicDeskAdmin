@@ -45,7 +45,7 @@ namespace LogicDeskAdmin.Remote
         static Connection()
         {
             Instance = new();
-            _serverHost = new Uri("http://127.0.0.1:80");
+            _serverHost = new Uri("http://127.0.0.1:8000/api");
             _client = new RestClient(_serverHost);
             _client.UseNewtonsoftJson(new Newtonsoft.Json.JsonSerializerSettings()
             {

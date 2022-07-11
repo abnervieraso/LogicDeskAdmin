@@ -12,6 +12,16 @@ namespace LogicDeskAdmin.Forms.Bases
 {
     public partial class MdiChildBase : Form
     {
+        public Binding Busy
+        {
+            get
+            {
+                var binding = new Binding("Enabled", Remote.Connection.Instance, "IsBusy");
+                binding.Format += (s, e) => e.Value = !(bool?)e.Value;
+                return binding;
+            }
+        }
+
         public MdiChildBase()
         {
             InitializeComponent();
